@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item">
+    <sc_cat_item action="DELETE">
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <category/>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description/>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>false</ignore_price>
+        <image/>
+        <list_price>0</list_price>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Gear Software Needed</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <picture/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=2d74d5ea2f168410cc4824c62799b687&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <recurring_frequency/>
+        <recurring_price>0</recurring_price>
+        <request_method/>
+        <roles/>
+        <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <short_description/>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <sys_class_name>sc_cat_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-15 07:54:24</sys_created_on>
+        <sys_id>2d74d5ea2f168410cc4824c62799b687</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gear Software Needed</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>sc_cat_item_2d74d5ea2f168410cc4824c62799b687</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-15 07:54:24</sys_updated_on>
+        <template/>
+        <type>item</type>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item>
+    <sys_translated_text action="DELETE" query="documentkey=2d74d5ea2f168410cc4824c62799b687"/>
+    <fx_price action="DELETE" query="id=2d74d5ea2f168410cc4824c62799b687"/>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>price</field>
+        <id>2d74d5ea2f168410cc4824c62799b687</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-15 07:54:24</sys_created_on>
+        <sys_id>06a455ea2f168410cc4824c62799b65e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-15 07:54:24</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>recurring_price</field>
+        <id>2d74d5ea2f168410cc4824c62799b687</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-15 07:54:24</sys_created_on>
+        <sys_id>4aa455ea2f168410cc4824c62799b65f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-15 07:54:24</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</application>
+        <file_path/>
+        <instance_id>79a53370db8f73400ae3ac44d49619d1</instance_id>
+        <instance_name>dev90235</instance_name>
+        <name>sc_cat_item_2d74d5ea2f168410cc4824c62799b687</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item"><sc_cat_item action="INSERT_OR_UPDATE"><active>true</active><availability>on_desktop</availability><billable>false</billable><category/><cost>0</cost><custom_cart/><delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan><delivery_plan_script/><delivery_time>1970-01-03 00:00:00</delivery_time><description/><display_price_property>non_zero</display_price_property><entitlement_script/><group/><hide_sp>false</hide_sp><icon/><ignore_price>false</ignore_price><image/><list_price>0</list_price><location/><mandatory_attachment>false</mandatory_attachment><meta/><mobile_hide_price>false</mobile_hide_price><mobile_picture/><mobile_picture_type>use_desktop_picture</mobile_picture_type><model/><name>Gear Software Needed</name><no_attachment_v2>false</no_attachment_v2><no_cart>false</no_cart><no_cart_v2>false</no_cart_v2><no_delivery_time_v2>false</no_delivery_time_v2><no_order>false</no_order><no_order_now>false</no_order_now><no_proceed_checkout>false</no_proceed_checkout><no_quantity>false</no_quantity><no_quantity_v2>false</no_quantity_v2><no_search>false</no_search><no_wishlist_v2>false</no_wishlist_v2><omit_price>false</omit_price><order>0</order><ordered_item_link/><picture/><preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=2d74d5ea2f168410cc4824c62799b687&amp;sysparm_preview=true", "summary");</preview><price>0</price><recurring_frequency/><recurring_price>0</recurring_price><request_method/><roles/><sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs><sc_ic_item_staging/><sc_ic_version/><short_description/><show_variable_help_on_load>false</show_variable_help_on_load><start_closed>false</start_closed><sys_class_name>sc_cat_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-15 07:54:24</sys_created_on><sys_id>2d74d5ea2f168410cc4824c62799b687</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Gear Software Needed</sys_name><sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package><sys_policy/><sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope><sys_update_name>sc_cat_item_2d74d5ea2f168410cc4824c62799b687</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-15 07:54:24</sys_updated_on><template/><type>item</type><use_sc_layout>true</use_sc_layout><vendor/><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><workflow/></sc_cat_item><sys_translated_text action="delete_multiple" query="documentkey=2d74d5ea2f168410cc4824c62799b687"/><fx_price action="delete_multiple" query="id=2d74d5ea2f168410cc4824c62799b687"/><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>price</field><id>2d74d5ea2f168410cc4824c62799b687</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-15 07:54:24</sys_created_on><sys_id>06a455ea2f168410cc4824c62799b65e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-15 07:54:24</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>recurring_price</field><id>2d74d5ea2f168410cc4824c62799b687</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-15 07:54:24</sys_created_on><sys_id>4aa455ea2f168410cc4824c62799b65f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-15 07:54:24</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price></record_update>]]></payload>
+        <payload_hash>-911120918</payload_hash>
+        <record_name>Gear Software Needed</record_name>
+        <reverted_from/>
+        <source>ca35d4012f5e0010cc4824c62799b614</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-15 07:54:25</sys_created_on>
+        <sys_id>caa41dea2f168410cc4824c62799b6e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fa83247fa0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-15 07:54:25</sys_updated_on>
+        <type>Catalog Item</type>
+        <update_guid>06a41dea26168410cf36da03867831e2</update_guid>
+        <update_guid_history>06a41dea26168410cf36da03867831e2:-911120918</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Gear Software Needed">d10fd9662f568410cc4824c62799b6e8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-15 08:39:41</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item">sc_cat_item</sys_db_object>
+        <sys_id>01f9041eaae04eb68008699d5a19d7f9</sys_id>
+        <sys_metadata>2d74d5ea2f168410cc4824c62799b687</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gear Software Needed</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_scope_delete display_value="">06f0968c4c1a4e93839265ccc647b9a1</sys_scope_delete>
+        <sys_update_name>sc_cat_item_2d74d5ea2f168410cc4824c62799b687</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_2d74d5ea2f168410cc4824c62799b687">caa41dea2f168410cc4824c62799b6e2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-15 08:39:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

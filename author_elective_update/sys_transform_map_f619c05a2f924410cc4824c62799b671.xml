@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_map">
+    <sys_transform_map action="DELETE">
+        <active>true</active>
+        <copy_empty_fields>false</copy_empty_fields>
+        <create_new_record_on_empty_coalesce_fields>false</create_new_record_on_empty_coalesce_fields>
+        <enforce_mandatory_fields>No</enforce_mandatory_fields>
+        <name>gate_access_control_api</name>
+        <order>100</order>
+        <run_business_rules>true</run_business_rules>
+        <run_script>false</run_script>
+        <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]></script>
+        <source_table>x_441085_gate_acce_gate_access_control_a</source_table>
+        <sys_class_name>sys_transform_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-14 07:46:19</sys_created_on>
+        <sys_id>f619c05a2f924410cc4824c62799b671</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>gate_access_control_api</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>sys_transform_map_f619c05a2f924410cc4824c62799b671</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-14 07:46:19</sys_updated_on>
+        <target_table>x_441085_gate_acce_register</target_table>
+    </sys_transform_map>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</application>
+        <file_path/>
+        <instance_id>79a53370db8f73400ae3ac44d49619d1</instance_id>
+        <instance_name>dev90235</instance_name>
+        <name>sys_transform_map_f619c05a2f924410cc4824c62799b671</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_transform_map"&gt;&lt;sys_transform_map action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;copy_empty_fields&gt;false&lt;/copy_empty_fields&gt;&lt;create_new_record_on_empty_coalesce_fields&gt;false&lt;/create_new_record_on_empty_coalesce_fields&gt;&lt;enforce_mandatory_fields&gt;No&lt;/enforce_mandatory_fields&gt;&lt;name&gt;gate_access_control_api&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;run_business_rules&gt;true&lt;/run_business_rules&gt;&lt;run_script&gt;false&lt;/run_script&gt;&lt;script&gt;&lt;![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]&gt;&lt;/script&gt;&lt;source_table&gt;x_441085_gate_acce_gate_access_control_a&lt;/source_table&gt;&lt;sys_class_name&gt;sys_transform_map&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-14 07:46:19&lt;/sys_created_on&gt;&lt;sys_id&gt;f619c05a2f924410cc4824c62799b671&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;gate_access_control_api&lt;/sys_name&gt;&lt;sys_package display_value="Gate Access Control" source="x_441085_gate_acce"&gt;c635d4012f5e0010cc4824c62799b612&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Gate Access Control"&gt;c635d4012f5e0010cc4824c62799b612&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_transform_map_f619c05a2f924410cc4824c62799b671&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-14 07:46:19&lt;/sys_updated_on&gt;&lt;target_table&gt;x_441085_gate_acce_register&lt;/target_table&gt;&lt;/sys_transform_map&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>933973469</payload_hash>
+        <record_name>gate_access_control_api</record_name>
+        <reverted_from/>
+        <source>ca35d4012f5e0010cc4824c62799b614</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-14 07:46:19</sys_created_on>
+        <sys_id>3939445a2f924410cc4824c62799b616</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fa30481550000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-14 07:46:19</sys_updated_on>
+        <type>Table Transform Map</type>
+        <update_guid>7139445a3d9244101379f9b79ce22116</update_guid>
+        <update_guid_history>7139445a3d9244101379f9b79ce22116:933973469</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-14 12:55:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_transform_map">sys_transform_map</sys_db_object>
+        <sys_id>091bd3ae3dcc42548b11752a9a152951</sys_id>
+        <sys_metadata>f619c05a2f924410cc4824c62799b671</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>gate_access_control_api</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_scope_delete display_value="">06f0968c4c1a4e93839265ccc647b9a1</sys_scope_delete>
+        <sys_update_name>sys_transform_map_f619c05a2f924410cc4824c62799b671</sys_update_name>
+        <sys_update_version display_value="sys_transform_map_f619c05a2f924410cc4824c62799b671">3939445a2f924410cc4824c62799b616</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-14 12:55:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

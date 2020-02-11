@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_css_include">
+    <m2m_sp_dependency_css_include action="DELETE">
+        <order>100</order>
+        <sp_css_include display_value="bootstrap-datetimepicker-standaloneCss">59ee12492fe2cc10cc4824c62799b6aa</sp_css_include>
+        <sp_dependency display_value="toastr">85c0568d2fa2cc10cc4824c62799b6fc</sp_dependency>
+        <sys_class_name>m2m_sp_dependency_css_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-23 07:44:00</sys_created_on>
+        <sys_id>fbfe1ac92fe2cc10cc4824c62799b6ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bootstrap-datetimepicker-standaloneCss.toastr</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>m2m_sp_dependency_css_include_fbfe1ac92fe2cc10cc4824c62799b6ab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-23 07:44:00</sys_updated_on>
+    </m2m_sp_dependency_css_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</application>
+        <file_path/>
+        <instance_id>79a53370db8f73400ae3ac44d49619d1</instance_id>
+        <instance_name>dev90235</instance_name>
+        <name>m2m_sp_dependency_css_include_fbfe1ac92fe2cc10cc4824c62799b6ab</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_css_include"><m2m_sp_dependency_css_include action="INSERT_OR_UPDATE"><order>100</order><sp_css_include display_value="bootstrap-datetimepicker-standaloneCss">59ee12492fe2cc10cc4824c62799b6aa</sp_css_include><sp_dependency display_value="toastr">85c0568d2fa2cc10cc4824c62799b6fc</sp_dependency><sys_class_name>m2m_sp_dependency_css_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-23 07:44:00</sys_created_on><sys_id>fbfe1ac92fe2cc10cc4824c62799b6ab</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bootstrap-datetimepicker-standaloneCss.toastr</sys_name><sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package><sys_policy/><sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope><sys_update_name>m2m_sp_dependency_css_include_fbfe1ac92fe2cc10cc4824c62799b6ab</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-23 07:44:00</sys_updated_on></m2m_sp_dependency_css_include></record_update>]]></payload>
+        <payload_hash>756031049</payload_hash>
+        <record_name>bootstrap-datetimepicker-standaloneCss.toastr</record_name>
+        <reverted_from/>
+        <source>ca35d4012f5e0010cc4824c62799b614</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-23 07:44:00</sys_created_on>
+        <sys_id>77fe1ac92fe2cc10cc4824c62799b6ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fd15ba0520000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-23 07:44:00</sys_updated_on>
+        <type>Dependency CSS Includes</type>
+        <update_guid>bffe1ac98fe2cc10cfd91fe99cb8dbac</update_guid>
+        <update_guid_history>bffe1ac98fe2cc10cfd91fe99cb8dbac:756031049</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="bootstrap-datetimepicker-standaloneCss.toastr">3b502e0d2fe2cc10cc4824c62799b6d5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-23 07:50:02</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_dependency_css_include">m2m_sp_dependency_css_include</sys_db_object>
+        <sys_id>bd57ae1d86444952a00d31407ca0a251</sys_id>
+        <sys_metadata>fbfe1ac92fe2cc10cc4824c62799b6ab</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bootstrap-datetimepicker-standaloneCss.toastr</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_scope_delete display_value="">06f0968c4c1a4e93839265ccc647b9a1</sys_scope_delete>
+        <sys_update_name>m2m_sp_dependency_css_include_fbfe1ac92fe2cc10cc4824c62799b6ab</sys_update_name>
+        <sys_update_version display_value="m2m_sp_dependency_css_include_fbfe1ac92fe2cc10cc4824c62799b6ab">77fe1ac92fe2cc10cc4824c62799b6ad</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-23 07:50:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

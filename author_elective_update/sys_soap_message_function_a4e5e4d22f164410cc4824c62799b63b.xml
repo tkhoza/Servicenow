@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="DELETE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:x="http://www.service-now.com/x_441085_gate_acce_gate_access_insert">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <x:deleteRecord>
+         <sys_id>${deleteRecord.sys_id}</sys_id>
+      </x:deleteRecord>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>deleteRecord</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>gate_access_outbound [ deleteRecord ]</qualified_name>
+        <soap_action>http://www.service-now.com/x_441085_gate_acce_gate_access_insert/deleteRecord</soap_action>
+        <soap_endpoint>https://dev90235.service-now.com/x_441085_gate_acce_gate_access_insert.do?SOAP</soap_endpoint>
+        <soap_message display_value="gate_access_outbound">65f464522f164410cc4824c62799b613</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-14 09:51:34</sys_created_on>
+        <sys_id>a4e5e4d22f164410cc4824c62799b63b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>deleteRecord</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>sys_soap_message_function_a4e5e4d22f164410cc4824c62799b63b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-14 09:51:34</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</application>
+        <file_path/>
+        <instance_id>79a53370db8f73400ae3ac44d49619d1</instance_id>
+        <instance_name>dev90235</instance_name>
+        <name>sys_soap_message_function_a4e5e4d22f164410cc4824c62799b63b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_soap_message_function"&gt;&lt;sys_soap_message_function action="INSERT_OR_UPDATE"&gt;&lt;authentication_type/&gt;&lt;basic_auth_password/&gt;&lt;basic_auth_profile/&gt;&lt;basic_auth_user/&gt;&lt;certificate/&gt;&lt;enable_mutual_auth&gt;false&lt;/enable_mutual_auth&gt;&lt;envelope&gt;&lt;![CDATA[&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:x="http://www.service-now.com/x_441085_gate_acce_gate_access_insert"&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;x:deleteRecord&gt;
+         &lt;sys_id&gt;${deleteRecord.sys_id}&lt;/sys_id&gt;
+      &lt;/x:deleteRecord&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;]]&gt;&lt;/envelope&gt;&lt;function_name&gt;deleteRecord&lt;/function_name&gt;&lt;key_store/&gt;&lt;key_store_alias/&gt;&lt;key_store_password/&gt;&lt;lock&gt;false&lt;/lock&gt;&lt;protocol_profile/&gt;&lt;qualified_name&gt;gate_access_outbound [ deleteRecord ]&lt;/qualified_name&gt;&lt;soap_action&gt;http://www.service-now.com/x_441085_gate_acce_gate_access_insert/deleteRecord&lt;/soap_action&gt;&lt;soap_endpoint&gt;https://dev90235.service-now.com/x_441085_gate_acce_gate_access_insert.do?SOAP&lt;/soap_endpoint&gt;&lt;soap_message display_value="gate_access_outbound"&gt;65f464522f164410cc4824c62799b613&lt;/soap_message&gt;&lt;strip_whitespace&gt;false&lt;/strip_whitespace&gt;&lt;sys_class_name&gt;sys_soap_message_function&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-14 09:51:34&lt;/sys_created_on&gt;&lt;sys_id&gt;a4e5e4d22f164410cc4824c62799b63b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;deleteRecord&lt;/sys_name&gt;&lt;sys_package display_value="Gate Access Control" source="x_441085_gate_acce"&gt;c635d4012f5e0010cc4824c62799b612&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Gate Access Control"&gt;c635d4012f5e0010cc4824c62799b612&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_soap_message_function_a4e5e4d22f164410cc4824c62799b63b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-14 09:51:34&lt;/sys_updated_on&gt;&lt;use_basic_auth&gt;false&lt;/use_basic_auth&gt;&lt;use_mid_server/&gt;&lt;use_ws_security&gt;false&lt;/use_ws_security&gt;&lt;ws_security_type/&gt;&lt;ws_security_username_profile/&gt;&lt;ws_security_x509_profile/&gt;&lt;/sys_soap_message_function&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>28814365</payload_hash>
+        <record_name>deleteRecord</record_name>
+        <reverted_from/>
+        <source>ca35d4012f5e0010cc4824c62799b614</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-14 09:51:34</sys_created_on>
+        <sys_id>68e5e4d22f164410cc4824c62799b63c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fa3772d1e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-14 09:51:34</sys_updated_on>
+        <type>SOAP Message Function</type>
+        <update_guid>a0e5e4d25c1644108c93084e6ded703c</update_guid>
+        <update_guid_history>a0e5e4d25c1644108c93084e6ded703c:28814365</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-14 12:46:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_soap_message_function">sys_soap_message_function</sys_db_object>
+        <sys_id>d907e5a8e0aa4cbc8f0b1dc72b442910</sys_id>
+        <sys_metadata>a4e5e4d22f164410cc4824c62799b63b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>deleteRecord</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_scope_delete display_value="">06f0968c4c1a4e93839265ccc647b9a1</sys_scope_delete>
+        <sys_update_name>sys_soap_message_function_a4e5e4d22f164410cc4824c62799b63b</sys_update_name>
+        <sys_update_version display_value="sys_soap_message_function_a4e5e4d22f164410cc4824c62799b63b">68e5e4d22f164410cc4824c62799b63c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-14 12:46:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

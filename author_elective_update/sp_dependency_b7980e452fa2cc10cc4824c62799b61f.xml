@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency">
+    <sp_dependency action="DELETE">
+        <module/>
+        <name>toastr</name>
+        <page_load>true</page_load>
+        <sp_portals>13f29bc72fd60810cc4824c62799b665</sp_portals>
+        <sys_class_name>sp_dependency</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-23 06:08:14</sys_created_on>
+        <sys_id>b7980e452fa2cc10cc4824c62799b61f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>toastr</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>sp_dependency_b7980e452fa2cc10cc4824c62799b61f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-23 06:08:14</sys_updated_on>
+    </sp_dependency>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</application>
+        <file_path/>
+        <instance_id>79a53370db8f73400ae3ac44d49619d1</instance_id>
+        <instance_name>dev90235</instance_name>
+        <name>sp_dependency_b7980e452fa2cc10cc4824c62799b61f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module/><name>toastr</name><page_load>true</page_load><sp_portals>13f29bc72fd60810cc4824c62799b665</sp_portals><sys_class_name>sp_dependency</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-23 06:08:14</sys_created_on><sys_id>b7980e452fa2cc10cc4824c62799b61f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>toastr</sys_name><sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package><sys_policy/><sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope><sys_update_name>sp_dependency_b7980e452fa2cc10cc4824c62799b61f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-23 06:08:14</sys_updated_on></sp_dependency></record_update>]]></payload>
+        <payload_hash>-1932792344</payload_hash>
+        <record_name>toastr</record_name>
+        <reverted_from/>
+        <source>ca35d4012f5e0010cc4824c62799b614</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-23 06:08:14</sys_created_on>
+        <sys_id>30198e852fa2cc10cc4824c62799b69d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fd103f10b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-23 06:08:14</sys_updated_on>
+        <type>Widget Dependency</type>
+        <update_guid>78198e85bda2cc108d39adbb818a729c</update_guid>
+        <update_guid_history>78198e85bda2cc108d39adbb818a729c:-1932792344</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="toastr">a1b0568d2fa2cc10cc4824c62799b652</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-23 06:41:35</sys_created_on>
+        <sys_db_object display_value="" name="sp_dependency">sp_dependency</sys_db_object>
+        <sys_id>11b80bce12964cf0a5e627f6d7cf9610</sys_id>
+        <sys_metadata>b7980e452fa2cc10cc4824c62799b61f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>toastr</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_scope_delete display_value="">06f0968c4c1a4e93839265ccc647b9a1</sys_scope_delete>
+        <sys_update_name>sp_dependency_b7980e452fa2cc10cc4824c62799b61f</sys_update_name>
+        <sys_update_version display_value="sp_dependency_b7980e452fa2cc10cc4824c62799b61f">30198e852fa2cc10cc4824c62799b69d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-23 06:41:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

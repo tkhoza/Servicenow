@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include">
+    <m2m_sp_dependency_js_include action="DELETE">
+        <order>100</order>
+        <sp_dependency display_value="Jquery Fiels">ecf316742f668c10cc4824c62799b6ce</sp_dependency>
+        <sp_js_include display_value="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js">ad64da742f668c10cc4824c62799b687</sp_js_include>
+        <sys_class_name>m2m_sp_dependency_js_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-22 12:21:09</sys_created_on>
+        <sys_id>75d49e782f268c10cc4824c62799b67f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Jquery Fiels.https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>m2m_sp_dependency_js_include_75d49e782f268c10cc4824c62799b67f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-22 12:21:09</sys_updated_on>
+    </m2m_sp_dependency_js_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</application>
+        <file_path/>
+        <instance_id>79a53370db8f73400ae3ac44d49619d1</instance_id>
+        <instance_name>dev90235</instance_name>
+        <name>m2m_sp_dependency_js_include_75d49e782f268c10cc4824c62799b67f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="Jquery Fiels">ecf316742f668c10cc4824c62799b6ce</sp_dependency><sp_js_include display_value="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js">ad64da742f668c10cc4824c62799b687</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-22 12:21:09</sys_created_on><sys_id>75d49e782f268c10cc4824c62799b67f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Jquery Fiels.https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js</sys_name><sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package><sys_policy/><sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope><sys_update_name>m2m_sp_dependency_js_include_75d49e782f268c10cc4824c62799b67f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-22 12:21:09</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+        <payload_hash>684106420</payload_hash>
+        <record_name>Jquery Fiels.https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js</record_name>
+        <reverted_from/>
+        <source>ca35d4012f5e0010cc4824c62799b614</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-22 12:21:09</sys_created_on>
+        <sys_id>79d452b42f668c10cc4824c62799b69e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fcd3301920000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-22 12:21:09</sys_updated_on>
+        <type>Dependency JS Includes</type>
+        <update_guid>b1d452b43e668c10dadc9b2eebb0e29e</update_guid>
+        <update_guid_history>b1d452b43e668c10dadc9b2eebb0e29e:684106420</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Jquery Fiels.https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js">29689a382f668c10cc4824c62799b681</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-22 12:36:42</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_dependency_js_include">m2m_sp_dependency_js_include</sys_db_object>
+        <sys_id>587b84d8e5ad4ee7b0a5a0fe3f063a29</sys_id>
+        <sys_metadata>75d49e782f268c10cc4824c62799b67f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Jquery Fiels.https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_scope_delete display_value="">06f0968c4c1a4e93839265ccc647b9a1</sys_scope_delete>
+        <sys_update_name>m2m_sp_dependency_js_include_75d49e782f268c10cc4824c62799b67f</sys_update_name>
+        <sys_update_version display_value="m2m_sp_dependency_js_include_75d49e782f268c10cc4824c62799b67f">79d452b42f668c10cc4824c62799b69e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-22 12:36:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

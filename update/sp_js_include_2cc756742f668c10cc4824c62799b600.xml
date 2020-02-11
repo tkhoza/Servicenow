@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include">
+    <sp_js_include action="INSERT_OR_UPDATE">
+        <display_name>https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js</display_name>
+        <source>url</source>
+        <sys_class_name>sp_js_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-22 12:34:20</sys_created_on>
+        <sys_id>2cc756742f668c10cc4824c62799b600</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_ui_script/>
+        <sys_update_name>sp_js_include_2cc756742f668c10cc4824c62799b600</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-22 12:34:20</sys_updated_on>
+        <url>https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js</url>
+    </sp_js_include>
+</record_update>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_441085_gate_acce_register</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_441085_gate_acce_register">time_inISNOTEMPTY^time_outISNOTEMPTY^EQ<item endquery="false" field="time_in" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="time_out" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Set Duration Field</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var timein = new GlideDateTime(current.time_in.getDisplayValue()); 
+	var timeOut = new GlideDateTime(current.time_out.getDisplayValue());
+	
+	var date = GlideDateTime.subtract(timein, timeOut); 
+	var timeSpent = new GlideDateTime(date).getTime().getByFormat('HH:mm:ss');
+	
+	current.duration_in_hours.setValue(timeSpent);
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-13 09:30:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b21353792f520410cc4824c62799b692</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Set Duration Field</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>sys_script_b21353792f520410cc4824c62799b692</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-20 06:23:09</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=b21353792f520410cc4824c62799b692"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</application>
+        <file_path/>
+        <instance_id>79a53370db8f73400ae3ac44d49619d1</instance_id>
+        <instance_name>dev90235</instance_name>
+        <name>sys_script_b21353792f520410cc4824c62799b692</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_441085_gate_acce_register&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_441085_gate_acce_register"&gt;time_inISNOTEMPTY^time_outISNOTEMPTY^EQ&lt;item endquery="false" field="time_in" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/&gt;&lt;item endquery="false" field="time_out" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Set Duration Field&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var timein = new GlideDateTime(current.time_in.getDisplayValue()); 
+	var timeOut = new GlideDateTime(current.time_out.getDisplayValue());
+	
+	var date = GlideDateTime.subtract(timein, timeOut); 
+	var timeSpent = new GlideDateTime(date).getTime().getByFormat('HH:mm:ss');
+	
+	current.duration_in_hours.setValue(timeSpent);
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-13 09:30:42&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;b21353792f520410cc4824c62799b692&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Set Duration Field&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Gate Access Control" source="x_441085_gate_acce"&gt;c635d4012f5e0010cc4824c62799b612&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Gate Access Control"&gt;c635d4012f5e0010cc4824c62799b612&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_b21353792f520410cc4824c62799b692&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-20 06:23:09&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=b21353792f520410cc4824c62799b692"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-600783004</payload_hash>
+        <record_name>Set Duration Field</record_name>
+        <reverted_from/>
+        <source>ca35d4012f5e0010cc4824c62799b614</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-20 06:23:09</sys_created_on>
+        <sys_id>86bfa64c2f2ec810cc4824c62799b6eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fc19e870b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-20 06:23:09</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>8ebfa64cbd2ec810fb1d5846cabdf6ea</update_guid>
+        <update_guid_history>8ebfa64cbd2ec810fb1d5846cabdf6ea:-600783004,f8afea0c4e2ec810b26cb4e36758ff21:-21615849,8f28df3d0052041037c0896731759234:-600783004,0d87dfb98e52041003d5370214f21a52:-263639866</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-20 06:25:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>9f3dca6aad4c4d0fa01ba90d09ac8401</sys_id>
+        <sys_metadata>b21353792f520410cc4824c62799b692</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Duration Field</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_parent display_value="Register">f3a51c492f5e0010cc4824c62799b69b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_scope_delete display_value="">06f0968c4c1a4e93839265ccc647b9a1</sys_scope_delete>
+        <sys_update_name>sys_script_b21353792f520410cc4824c62799b692</sys_update_name>
+        <sys_update_version display_value="sys_script_b21353792f520410cc4824c62799b692">86bfa64c2f2ec810cc4824c62799b6eb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-20 06:25:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

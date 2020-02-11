@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="duration_in_hours" label="Duration in Hours" language="en" table="x_441085_gate_acce_register">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>duration_in_hours</element>
+            <help/>
+            <hint/>
+            <label>Duration in Hours</label>
+            <language>en</language>
+            <name>x_441085_gate_acce_register</name>
+            <plural>Duration in Hours</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-10 12:10:06</sys_created_on>
+            <sys_id>4f3f10052f9e0010cc4824c62799b648</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Duration in Hours</sys_name>
+            <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+            <sys_update_name>sys_documentation_x_441085_gate_acce_register_duration_in_hours_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-10 12:10:06</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

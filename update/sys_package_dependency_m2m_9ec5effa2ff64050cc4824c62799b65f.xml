@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="System Applications Core" source="com.snc.apps">906c03171b0200106b77da49cc4bcb81</dependency>
+        <min_version>1.0.1</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-10 09:38:22</sys_created_on>
+        <sys_id>9ec5effa2ff64050cc4824c62799b65f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-10 09:38:22</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

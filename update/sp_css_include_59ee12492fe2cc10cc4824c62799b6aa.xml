@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include">
+    <sp_css_include action="INSERT_OR_UPDATE">
+        <name>bootstrap-datetimepicker-standaloneCss</name>
+        <source>url</source>
+        <sp_css/>
+        <sys_class_name>sp_css_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-23 07:44:00</sys_created_on>
+        <sys_id>59ee12492fe2cc10cc4824c62799b6aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bootstrap-datetimepicker-standaloneCss</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>sp_css_include_59ee12492fe2cc10cc4824c62799b6aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-23 07:44:00</sys_updated_on>
+        <url>https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.css</url>
+    </sp_css_include>
+</record_update>

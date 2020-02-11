@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>when Time Out on change calculate the duration</description>
+        <field>time_out</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>OnChange TimeOut</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (newValue === '') {
+      return;
+   }
+	
+	var timeInValue = g_form.getValue('time_in');
+	
+	if(timeInValue !== ''){
+		var ga = new GlideAjax('getDateDuration');
+	
+		ga.addParam('sysparm_name', 'getTime');
+		ga.addParam('sysparm_value1', timeInValue);
+		ga.addParam('sysparm_value2', newValue);
+
+		ga.getXML(callBack);
+	}
+
+	function callBack(response) {
+		var durationTime = response.responseXML.documentElement.getAttribute("answer");
+		g_form.setValue('duration_in_hours',durationTime);
+	}
+
+   //Type appropriate comment here, and begin script below
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-13 12:34:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d41188422f160410cc4824c62799b676</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>OnChange TimeOut</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>sys_script_client_d41188422f160410cc4824c62799b676</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-13 13:07:29</sys_updated_on>
+        <table>x_441085_gate_acce_register</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</application>
+        <file_path/>
+        <instance_id>79a53370db8f73400ae3ac44d49619d1</instance_id>
+        <instance_name>dev90235</instance_name>
+        <name>sys_script_client_d41188422f160410cc4824c62799b676</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;when Time Out on change calculate the duration&lt;/description&gt;&lt;field&gt;time_out&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;OnChange TimeOut&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (newValue === '') {
+      return;
+   }
+	
+	var timeInValue = g_form.getValue('time_in');
+	
+	if(timeInValue !== ''){
+		var ga = new GlideAjax('getDateDuration');
+	
+		ga.addParam('sysparm_name', 'getTime');
+		ga.addParam('sysparm_value1', timeInValue);
+		ga.addParam('sysparm_value2', newValue);
+
+		ga.getXML(callBack);
+	}
+
+	function callBack(response) {
+		var durationTime = response.responseXML.documentElement.getAttribute("answer");
+		g_form.setValue('duration_in_hours',durationTime);
+	}
+
+   //Type appropriate comment here, and begin script below
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-13 12:34:33&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;d41188422f160410cc4824c62799b676&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;OnChange TimeOut&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Gate Access Control" source="x_441085_gate_acce"&gt;c635d4012f5e0010cc4824c62799b612&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Gate Access Control"&gt;c635d4012f5e0010cc4824c62799b612&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_d41188422f160410cc4824c62799b676&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-13 13:07:29&lt;/sys_updated_on&gt;&lt;table&gt;x_441085_gate_acce_register&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-575918762</payload_hash>
+        <record_name>OnChange TimeOut</record_name>
+        <reverted_from/>
+        <source>ca35d4012f5e0010cc4824c62799b614</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-13 13:07:29</sys_created_on>
+        <sys_id>e429c4862f160410cc4824c62799b6a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f9f042fc10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-13 13:07:29</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>6029c486141604105d76038ee8568ca7</update_guid>
+        <update_guid_history>6029c486141604105d76038ee8568ca7:-575918762,1bb384ce74d204100ad0c677c5c2e32a:-288835626,c97388c225160410e0e6e31621d9d6e5:1551884208,d69140827f1604102b622268335ee182:1528334461</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-20 06:12:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>30b275900e9841ec9c150cc00b856dc4</sys_id>
+        <sys_metadata>d41188422f160410cc4824c62799b676</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OnChange TimeOut</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_parent display_value="Register">f3a51c492f5e0010cc4824c62799b69b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_scope_delete display_value="">06f0968c4c1a4e93839265ccc647b9a1</sys_scope_delete>
+        <sys_update_name>sys_script_client_d41188422f160410cc4824c62799b676</sys_update_name>
+        <sys_update_version display_value="sys_script_client_d41188422f160410cc4824c62799b676">e429c4862f160410cc4824c62799b6a7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-20 06:12:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

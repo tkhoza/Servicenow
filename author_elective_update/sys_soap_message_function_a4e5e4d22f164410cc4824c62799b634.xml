@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="DELETE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:x="http://www.service-now.com/x_441085_gate_acce_gate_access_insert">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <x:getRecords>
+         <!--Optional:-->
+         <import_set_run>${getRecords.import_set_run}</import_set_run>
+         <!--Optional:-->
+         <sys_class_name>${getRecords.sys_class_name}</sys_class_name>
+         <!--Optional:-->
+         <sys_created_by>${getRecords.sys_created_by}</sys_created_by>
+         <!--Optional:-->
+         <sys_created_on>${getRecords.sys_created_on}</sys_created_on>
+         <!--Optional:-->
+         <sys_id>${getRecords.sys_id}</sys_id>
+         <!--Optional:-->
+         <sys_import_row>${getRecords.sys_import_row}</sys_import_row>
+         <!--Optional:-->
+         <sys_import_set>${getRecords.sys_import_set}</sys_import_set>
+         <!--Optional:-->
+         <sys_import_state>${getRecords.sys_import_state}</sys_import_state>
+         <!--Optional:-->
+         <sys_import_state_comment>${getRecords.sys_import_state_comment}</sys_import_state_comment>
+         <!--Optional:-->
+         <sys_mod_count>${getRecords.sys_mod_count}</sys_mod_count>
+         <!--Optional:-->
+         <sys_row_error>${getRecords.sys_row_error}</sys_row_error>
+         <!--Optional:-->
+         <sys_target_sys_id>${getRecords.sys_target_sys_id}</sys_target_sys_id>
+         <!--Optional:-->
+         <sys_target_table>${getRecords.sys_target_table}</sys_target_table>
+         <!--Optional:-->
+         <sys_transform_map>${getRecords.sys_transform_map}</sys_transform_map>
+         <!--Optional:-->
+         <sys_updated_by>${getRecords.sys_updated_by}</sys_updated_by>
+         <!--Optional:-->
+         <sys_updated_on>${getRecords.sys_updated_on}</sys_updated_on>
+         <!--Optional:-->
+         <template_import_log>${getRecords.template_import_log}</template_import_log>
+         <!--Optional:-->
+         <u_cell_number>${getRecords.u_cell_number}</u_cell_number>
+         <!--Optional:-->
+         <u_duration_in_hours>${getRecords.u_duration_in_hours}</u_duration_in_hours>
+         <!--Optional:-->
+         <u_first_name>${getRecords.u_first_name}</u_first_name>
+         <!--Optional:-->
+         <u_gender>${getRecords.u_gender}</u_gender>
+         <!--Optional:-->
+         <u_last_name>${getRecords.u_last_name}</u_last_name>
+         <!--Optional:-->
+         <u_number>${getRecords.u_number}</u_number>
+         <!--Optional:-->
+         <u_passport_id_number>${getRecords.u_passport_id_number}</u_passport_id_number>
+         <!--Optional:-->
+         <u_reason_for_visit>${getRecords.u_reason_for_visit}</u_reason_for_visit>
+         <!--Optional:-->
+         <u_time_in>${getRecords.u_time_in}</u_time_in>
+         <!--Optional:-->
+         <u_time_out>${getRecords.u_time_out}</u_time_out>
+         <!--Optional:-->
+         <__use_view>${getRecords.__use_view}</__use_view>
+         <!--Optional:-->
+         <__encoded_query>${getRecords.__encoded_query}</__encoded_query>
+         <!--Optional:-->
+         <__limit>${getRecords.__limit}</__limit>
+         <!--Optional:-->
+         <__first_row>${getRecords.__first_row}</__first_row>
+         <!--Optional:-->
+         <__last_row>${getRecords.__last_row}</__last_row>
+         <!--Optional:-->
+         <__order_by>${getRecords.__order_by}</__order_by>
+         <!--Optional:-->
+         <__order_by_desc>${getRecords.__order_by_desc}</__order_by_desc>
+         <!--Optional:-->
+         <__exclude_columns>${getRecords.__exclude_columns}</__exclude_columns>
+      </x:getRecords>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>getRecords</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>gate_access_outbound [ getRecords ]</qualified_name>
+        <soap_action>http://www.service-now.com/x_441085_gate_acce_gate_access_insert/getRecords</soap_action>
+        <soap_endpoint>https://dev90235.service-now.com/x_441085_gate_acce_gate_access_insert.do?SOAP</soap_endpoint>
+        <soap_message display_value="gate_access_outbound">65f464522f164410cc4824c62799b613</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-14 09:51:34</sys_created_on>
+        <sys_id>a4e5e4d22f164410cc4824c62799b634</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>getRecords</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>sys_soap_message_function_a4e5e4d22f164410cc4824c62799b634</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-14 09:51:34</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</application>
+        <file_path/>
+        <instance_id>79a53370db8f73400ae3ac44d49619d1</instance_id>
+        <instance_name>dev90235</instance_name>
+        <name>sys_soap_message_function_a4e5e4d22f164410cc4824c62799b634</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_soap_message_function"&gt;&lt;sys_soap_message_function action="INSERT_OR_UPDATE"&gt;&lt;authentication_type/&gt;&lt;basic_auth_password/&gt;&lt;basic_auth_profile/&gt;&lt;basic_auth_user/&gt;&lt;certificate/&gt;&lt;enable_mutual_auth&gt;false&lt;/enable_mutual_auth&gt;&lt;envelope&gt;&lt;![CDATA[&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:x="http://www.service-now.com/x_441085_gate_acce_gate_access_insert"&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;x:getRecords&gt;
+         &lt;!--Optional:--&gt;
+         &lt;import_set_run&gt;${getRecords.import_set_run}&lt;/import_set_run&gt;
+         &lt;!--Optional:--&gt;
+         &lt;sys_class_name&gt;${getRecords.sys_class_name}&lt;/sys_class_name&gt;
+         &lt;!--Optional:--&gt;
+         &lt;sys_created_by&gt;${getRecords.sys_created_by}&lt;/sys_created_by&gt;
+         &lt;!--Optional:--&gt;
+         &lt;sys_created_on&gt;${getRecords.sys_created_on}&lt;/sys_created_on&gt;
+         &lt;!--Optional:--&gt;
+         &lt;sys_id&gt;${getRecords.sys_id}&lt;/sys_id&gt;
+         &lt;!--Optional:--&gt;
+         &lt;sys_import_row&gt;${getRecords.sys_import_row}&lt;/sys_import_row&gt;
+         &lt;!--Optional:--&gt;
+         &lt;sys_import_set&gt;${getRecords.sys_import_set}&lt;/sys_import_set&gt;
+         &lt;!--Optional:--&gt;
+         &lt;sys_import_state&gt;${getRecords.sys_import_state}&lt;/sys_import_state&gt;
+         &lt;!--Optional:--&gt;
+         &lt;sys_import_state_comment&gt;${getRecords.sys_import_state_comment}&lt;/sys_import_state_comment&gt;
+         &lt;!--Optional:--&gt;
+         &lt;sys_mod_count&gt;${getRecords.sys_mod_count}&lt;/sys_mod_count&gt;
+         &lt;!--Optional:--&gt;
+         &lt;sys_row_error&gt;${getRecords.sys_row_error}&lt;/sys_row_error&gt;
+         &lt;!--Optional:--&gt;
+         &lt;sys_target_sys_id&gt;${getRecords.sys_target_sys_id}&lt;/sys_target_sys_id&gt;
+         &lt;!--Optional:--&gt;
+         &lt;sys_target_table&gt;${getRecords.sys_target_table}&lt;/sys_target_table&gt;
+         &lt;!--Optional:--&gt;
+         &lt;sys_transform_map&gt;${getRecords.sys_transform_map}&lt;/sys_transform_map&gt;
+         &lt;!--Optional:--&gt;
+         &lt;sys_updated_by&gt;${getRecords.sys_updated_by}&lt;/sys_updated_by&gt;
+         &lt;!--Optional:--&gt;
+         &lt;sys_updated_on&gt;${getRecords.sys_updated_on}&lt;/sys_updated_on&gt;
+         &lt;!--Optional:--&gt;
+         &lt;template_import_log&gt;${getRecords.template_import_log}&lt;/template_import_log&gt;
+         &lt;!--Optional:--&gt;
+         &lt;u_cell_number&gt;${getRecords.u_cell_number}&lt;/u_cell_number&gt;
+         &lt;!--Optional:--&gt;
+         &lt;u_duration_in_hours&gt;${getRecords.u_duration_in_hours}&lt;/u_duration_in_hours&gt;
+         &lt;!--Optional:--&gt;
+         &lt;u_first_name&gt;${getRecords.u_first_name}&lt;/u_first_name&gt;
+         &lt;!--Optional:--&gt;
+         &lt;u_gender&gt;${getRecords.u_gender}&lt;/u_gender&gt;
+         &lt;!--Optional:--&gt;
+         &lt;u_last_name&gt;${getRecords.u_last_name}&lt;/u_last_name&gt;
+         &lt;!--Optional:--&gt;
+         &lt;u_number&gt;${getRecords.u_number}&lt;/u_number&gt;
+         &lt;!--Optional:--&gt;
+         &lt;u_passport_id_number&gt;${getRecords.u_passport_id_number}&lt;/u_passport_id_number&gt;
+         &lt;!--Optional:--&gt;
+         &lt;u_reason_for_visit&gt;${getRecords.u_reason_for_visit}&lt;/u_reason_for_visit&gt;
+         &lt;!--Optional:--&gt;
+         &lt;u_time_in&gt;${getRecords.u_time_in}&lt;/u_time_in&gt;
+         &lt;!--Optional:--&gt;
+         &lt;u_time_out&gt;${getRecords.u_time_out}&lt;/u_time_out&gt;
+         &lt;!--Optional:--&gt;
+         &lt;__use_view&gt;${getRecords.__use_view}&lt;/__use_view&gt;
+         &lt;!--Optional:--&gt;
+         &lt;__encoded_query&gt;${getRecords.__encoded_query}&lt;/__encoded_query&gt;
+         &lt;!--Optional:--&gt;
+         &lt;__limit&gt;${getRecords.__limit}&lt;/__limit&gt;
+         &lt;!--Optional:--&gt;
+         &lt;__first_row&gt;${getRecords.__first_row}&lt;/__first_row&gt;
+         &lt;!--Optional:--&gt;
+         &lt;__last_row&gt;${getRecords.__last_row}&lt;/__last_row&gt;
+         &lt;!--Optional:--&gt;
+         &lt;__order_by&gt;${getRecords.__order_by}&lt;/__order_by&gt;
+         &lt;!--Optional:--&gt;
+         &lt;__order_by_desc&gt;${getRecords.__order_by_desc}&lt;/__order_by_desc&gt;
+         &lt;!--Optional:--&gt;
+         &lt;__exclude_columns&gt;${getRecords.__exclude_columns}&lt;/__exclude_columns&gt;
+      &lt;/x:getRecords&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;]]&gt;&lt;/envelope&gt;&lt;function_name&gt;getRecords&lt;/function_name&gt;&lt;key_store/&gt;&lt;key_store_alias/&gt;&lt;key_store_password/&gt;&lt;lock&gt;false&lt;/lock&gt;&lt;protocol_profile/&gt;&lt;qualified_name&gt;gate_access_outbound [ getRecords ]&lt;/qualified_name&gt;&lt;soap_action&gt;http://www.service-now.com/x_441085_gate_acce_gate_access_insert/getRecords&lt;/soap_action&gt;&lt;soap_endpoint&gt;https://dev90235.service-now.com/x_441085_gate_acce_gate_access_insert.do?SOAP&lt;/soap_endpoint&gt;&lt;soap_message display_value="gate_access_outbound"&gt;65f464522f164410cc4824c62799b613&lt;/soap_message&gt;&lt;strip_whitespace&gt;false&lt;/strip_whitespace&gt;&lt;sys_class_name&gt;sys_soap_message_function&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-14 09:51:34&lt;/sys_created_on&gt;&lt;sys_id&gt;a4e5e4d22f164410cc4824c62799b634&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;getRecords&lt;/sys_name&gt;&lt;sys_package display_value="Gate Access Control" source="x_441085_gate_acce"&gt;c635d4012f5e0010cc4824c62799b612&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Gate Access Control"&gt;c635d4012f5e0010cc4824c62799b612&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_soap_message_function_a4e5e4d22f164410cc4824c62799b634&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-14 09:51:34&lt;/sys_updated_on&gt;&lt;use_basic_auth&gt;false&lt;/use_basic_auth&gt;&lt;use_mid_server/&gt;&lt;use_ws_security&gt;false&lt;/use_ws_security&gt;&lt;ws_security_type/&gt;&lt;ws_security_username_profile/&gt;&lt;ws_security_x509_profile/&gt;&lt;/sys_soap_message_function&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-456374907</payload_hash>
+        <record_name>getRecords</record_name>
+        <reverted_from/>
+        <source>ca35d4012f5e0010cc4824c62799b614</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-14 09:51:34</sys_created_on>
+        <sys_id>68e5e4d22f164410cc4824c62799b635</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fa3772cb30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-14 09:51:34</sys_updated_on>
+        <type>SOAP Message Function</type>
+        <update_guid>a0e5e4d28c164410be63a6e314658d35</update_guid>
+        <update_guid_history>a0e5e4d28c164410be63a6e314658d35:-456374907</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-14 12:46:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_soap_message_function">sys_soap_message_function</sys_db_object>
+        <sys_id>21a81d73a4de4130998b979c2b803ec4</sys_id>
+        <sys_metadata>a4e5e4d22f164410cc4824c62799b634</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>getRecords</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_scope_delete display_value="">06f0968c4c1a4e93839265ccc647b9a1</sys_scope_delete>
+        <sys_update_name>sys_soap_message_function_a4e5e4d22f164410cc4824c62799b634</sys_update_name>
+        <sys_update_version display_value="sys_soap_message_function_a4e5e4d22f164410cc4824c62799b634">68e5e4d22f164410cc4824c62799b635</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-14 12:46:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var d = this;
+	
+	d.registerVisitor = function(){
+		d.server.update().then(function(response){
+			 d.data = {};
+		})
+	}
+	
+	d.isOpen = false;
+
+	d.callForm = function(state) {
+		d.isOpen = state === 'open' ? true : false;
+		if(state === 'open')
+		{
+			var today = new Date();
+			var dd = String(today.getDate()).padStart(2, '0');
+			var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+			var yyyy = today.getFullYear();
+
+			today = dd + '/' + mm + '/' + yyyy;
+			document.getElementById("d.date").value = today
+		}
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>CreateRegister</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	if(!input)
+				return null;
+
+				var visitorsADDObj = new GlideRecord('x_441085_gate_acce_register'); 
+				visitorsADDObj.initialize();
+				visitorsADDObj.last_name = input.lname;
+				visitorsADDObj.first_name = input.lname;
+				visitorsADDObj.gender = input.lname;
+				visitorsADDObj.passport_id_number = input.lname;
+				visitorsADDObj.cell_number = input.lname;
+				visitorsADDObj.reason_for_visit = input.lname;
+				visitorsADDObj.insert();
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-20 12:29:18</sys_created_on>
+        <sys_id>ba630c582f620c10cc4824c62799b662</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>CreateRegister</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>sp_widget_ba630c582f620c10cc4824c62799b662</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-20 12:33:37</sys_updated_on>
+        <template><![CDATA[<br/>
+<button ng-if="!c.isOpen" class="btn btn-success float-right" ng-click="c.callForm('open')">Sign in Visitor</button>
+<button ng-if="c.isOpen" class="btn btn-default float-right"  ng-click="c.callForm('close')">Cancel</button>
+<div>
+  <form ng-if="c.isOpen" class="bold-border">
+    <h4 style="color:black;">
+      Enter Visitor's details
+    </h4>
+    <div class="row">
+      
+       <div class="col-md-8">
+        <div class="form-group">
+          <label for="lname">Last Name</label>
+          <input type="text" class="form-control" id="lname" ng-model="d.data.lname">
+        </div>
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input type="text" class="form-control" id="fname" ng-model="d.data.fname">
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <input type="text" class="form-control" id="gender" ng-model="d.data.gender">
+        </div>
+        <div class="form-group">
+          <label for="identity">identity</label>
+          <input type="text" class="form-control" id="identity" ng-model="d.data.identity">
+        </div>
+        <div class="form-group">
+          <label for="cellNo">Cell Number</label>
+          <input type="text" class="form-control" id="cellNo" ng-model="d.data.cellNo">
+        </div>
+        <div class="form-group">
+          <label for="reason">Reason For Visiting</label>
+          <textarea  type="text" class="form-control" id="reason" ng-model="d.data.reason"></textarea>
+        </div>
+      </div>
+      <div class="col-md-4">
+       <div class="form-group">
+          <label for="dateVisit">Date Of Visit</label>
+          <input type="date" onload="getDate()" class="form-control" id="date">
+        </div>
+        <div class="form-group">
+          <label for="timeIn">Time In</label>
+          <input type="time" class="form-control" id="timeIn" readonly="true">
+        </div>
+        <div class="form-group">
+          <label for="timeOut">Time Out</label>
+          <input type="time" class="form-control" id="timeOut" readonly="true">
+        </div>
+        <div class="form-group">
+          <div class="btn btn-primary">Sign In</div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<br/>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</application>
+        <file_path/>
+        <instance_id>79a53370db8f73400ae3ac44d49619d1</instance_id>
+        <instance_name>dev90235</instance_name>
+        <name>sp_widget_ba630c582f620c10cc4824c62799b662</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+  /* widget controller */
+  var d = this;
+	
+	d.registerVisitor = function(){
+		d.server.update().then(function(response){
+			 d.data = {};
+		})
+	}
+	
+	d.isOpen = false;
+
+	d.callForm = function(state) {
+		d.isOpen = state === 'open' ? true : false;
+		if(state === 'open')
+		{
+			var today = new Date();
+			var dd = String(today.getDate()).padStart(2, '0');
+			var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+			var yyyy = today.getFullYear();
+
+			today = dd + '/' + mm + '/' + yyyy;
+			document.getElementById("d.date").value = today
+		}
+	}
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;CreateRegister&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	if(!input)
+				return null;
+
+				var visitorsADDObj = new GlideRecord('x_441085_gate_acce_register'); 
+				visitorsADDObj.initialize();
+				visitorsADDObj.last_name = input.lname;
+				visitorsADDObj.first_name = input.lname;
+				visitorsADDObj.gender = input.lname;
+				visitorsADDObj.passport_id_number = input.lname;
+				visitorsADDObj.cell_number = input.lname;
+				visitorsADDObj.reason_for_visit = input.lname;
+				visitorsADDObj.insert();
+	
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-20 12:29:18&lt;/sys_created_on&gt;&lt;sys_id&gt;ba630c582f620c10cc4824c62799b662&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;CreateRegister&lt;/sys_name&gt;&lt;sys_package display_value="Gate Access Control" source="x_441085_gate_acce"&gt;c635d4012f5e0010cc4824c62799b612&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Gate Access Control"&gt;c635d4012f5e0010cc4824c62799b612&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_ba630c582f620c10cc4824c62799b662&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-20 12:33:37&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;br/&gt;
+&lt;button ng-if="!c.isOpen" class="btn btn-success float-right" ng-click="c.callForm('open')"&gt;Sign in Visitor&lt;/button&gt;
+&lt;button ng-if="c.isOpen" class="btn btn-default float-right"  ng-click="c.callForm('close')"&gt;Cancel&lt;/button&gt;
+&lt;div&gt;
+  &lt;form ng-if="c.isOpen" class="bold-border"&gt;
+    &lt;h4 style="color:black;"&gt;
+      Enter Visitor's details
+    &lt;/h4&gt;
+    &lt;div class="row"&gt;
+      
+       &lt;div class="col-md-8"&gt;
+        &lt;div class="form-group"&gt;
+          &lt;label for="lname"&gt;Last Name&lt;/label&gt;
+          &lt;input type="text" class="form-control" id="lname" ng-model="d.data.lname"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+          &lt;label for="fname"&gt;First Name&lt;/label&gt;
+          &lt;input type="text" class="form-control" id="fname" ng-model="d.data.fname"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+          &lt;label for="gender"&gt;Gender&lt;/label&gt;
+          &lt;input type="text" class="form-control" id="gender" ng-model="d.data.gender"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+          &lt;label for="identity"&gt;identity&lt;/label&gt;
+          &lt;input type="text" class="form-control" id="identity" ng-model="d.data.identity"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+          &lt;label for="cellNo"&gt;Cell Number&lt;/label&gt;
+          &lt;input type="text" class="form-control" id="cellNo" ng-model="d.data.cellNo"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+          &lt;label for="reason"&gt;Reason For Visiting&lt;/label&gt;
+          &lt;textarea  type="text" class="form-control" id="reason" ng-model="d.data.reason"&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="col-md-4"&gt;
+       &lt;div class="form-group"&gt;
+          &lt;label for="dateVisit"&gt;Date Of Visit&lt;/label&gt;
+          &lt;input type="date" onload="getDate()" class="form-control" id="date"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+          &lt;label for="timeIn"&gt;Time In&lt;/label&gt;
+          &lt;input type="time" class="form-control" id="timeIn" readonly="true"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+          &lt;label for="timeOut"&gt;Time Out&lt;/label&gt;
+          &lt;input type="time" class="form-control" id="timeOut" readonly="true"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+          &lt;div class="btn btn-primary"&gt;Sign In&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+&lt;/div&gt;
+&lt;br/&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-420903095</payload_hash>
+        <record_name>CreateRegister</record_name>
+        <reverted_from/>
+        <source>ca35d4012f5e0010cc4824c62799b614</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-20 12:33:37</sys_created_on>
+        <sys_id>3484841c2f620c10cc4824c62799b61d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fc2f1b13b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-20 12:33:37</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>bc84841cb4620c1097b2bf451c164e1c</update_guid>
+        <update_guid_history>bc84841cb4620c1097b2bf451c164e1c:-420903095,d4f384d89e620c105856d546d65e8596:-1628492488,e18384d802620c1032f1b85df5be4d90:-2128328235</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="CreateRegister">a9278c9c2f620c10cc4824c62799b649</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-20 12:45:08</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>0fa0028cb7e345b0a08566203dfe17a4</sys_id>
+        <sys_metadata>ba630c582f620c10cc4824c62799b662</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CreateRegister</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_scope_delete display_value="">06f0968c4c1a4e93839265ccc647b9a1</sys_scope_delete>
+        <sys_update_name>sp_widget_ba630c582f620c10cc4824c62799b662</sys_update_name>
+        <sys_update_version display_value="sp_widget_ba630c582f620c10cc4824c62799b662">3484841c2f620c10cc4824c62799b61d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-20 12:45:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category">
+    <sc_category action="DELETE">
+        <active>true</active>
+        <description/>
+        <entitlement_script/>
+        <header_icon/>
+        <homepage_image/>
+        <homepage_renderer display_value="Category Items">47ebe8aa3742300054b6a3549dbe5dfa</homepage_renderer>
+        <icon/>
+        <image/>
+        <location/>
+        <mobile_hide_description>false</mobile_hide_description>
+        <mobile_picture/>
+        <mobile_subcategory_render_type>list</mobile_subcategory_render_type>
+        <module/>
+        <order>0</order>
+        <parent/>
+        <roles/>
+        <sc_catalog/>
+        <sys_class_name>sc_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-15 08:20:46</sys_created_on>
+        <sys_id>eb9a15622f568410cc4824c62799b620</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Software</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>sc_category_eb9a15622f568410cc4824c62799b620</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-15 08:20:46</sys_updated_on>
+        <title>Software</title>
+    </sc_category>
+    <sys_translated_text action="DELETE" query="documentkey=eb9a15622f568410cc4824c62799b620"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</application>
+        <file_path/>
+        <instance_id>79a53370db8f73400ae3ac44d49619d1</instance_id>
+        <instance_name>dev90235</instance_name>
+        <name>sc_category_eb9a15622f568410cc4824c62799b620</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category"><sc_category action="INSERT_OR_UPDATE"><active>true</active><description/><entitlement_script/><header_icon/><homepage_image/><homepage_renderer display_value="Category Items">47ebe8aa3742300054b6a3549dbe5dfa</homepage_renderer><icon/><image/><location/><mobile_hide_description>false</mobile_hide_description><mobile_picture/><mobile_subcategory_render_type>list</mobile_subcategory_render_type><module/><order>0</order><parent/><roles/><sc_catalog/><sys_class_name>sc_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-15 08:20:46</sys_created_on><sys_id>eb9a15622f568410cc4824c62799b620</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Software</sys_name><sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package><sys_policy/><sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope><sys_update_name>sc_category_eb9a15622f568410cc4824c62799b620</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-15 08:20:46</sys_updated_on><title>Software</title></sc_category><sys_translated_text action="delete_multiple" query="documentkey=eb9a15622f568410cc4824c62799b620"/></record_update>]]></payload>
+        <payload_hash>-1968038096</payload_hash>
+        <record_name>Software</record_name>
+        <reverted_from/>
+        <source>ca35d4012f5e0010cc4824c62799b614</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-15 08:20:46</sys_created_on>
+        <sys_id>94ba99222f568410cc4824c62799b64a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fa84a68470000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-15 08:20:46</sys_updated_on>
+        <type>Category</type>
+        <update_guid>dcba9922f856841066c16f72bda0b049</update_guid>
+        <update_guid_history>dcba9922f856841066c16f72bda0b049:-1968038096</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Software">92fba1a22f968410cc4824c62799b6f4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-15 09:36:16</sys_created_on>
+        <sys_db_object display_value="" name="sc_category">sc_category</sys_db_object>
+        <sys_id>01ea85561e6b4b65806eab323ee60b51</sys_id>
+        <sys_metadata>eb9a15622f568410cc4824c62799b620</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Software</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_scope_delete display_value="">06f0968c4c1a4e93839265ccc647b9a1</sys_scope_delete>
+        <sys_update_name>sc_category_eb9a15622f568410cc4824c62799b620</sys_update_name>
+        <sys_update_version display_value="sc_category_eb9a15622f568410cc4824c62799b620">94ba99222f568410cc4824c62799b64a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-15 09:36:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

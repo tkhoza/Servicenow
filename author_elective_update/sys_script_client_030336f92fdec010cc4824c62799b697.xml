@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>time_in</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>OnChange Time In</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+	var timeOutValue = g_form.getValue('time_out');
+
+	if (timeOutValue !== '') {
+		var timein = new Date(newValue); 
+		var timeOut = new Date(timeOutValue);
+
+		var date = DateTime.subtract(timein, timeOut); 
+		var timeSpent = new GlideDateTime(date).getTime().getByFormat('HH:mm:ss');
+
+		g_form.addErrorMessage("Time spent on premise " + timeSpent);
+	}
+	
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-13 06:58:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>030336f92fdec010cc4824c62799b697</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>OnChange Time In</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>sys_script_client_030336f92fdec010cc4824c62799b697</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-13 09:09:08</sys_updated_on>
+        <table>x_441085_gate_acce_register</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</application>
+        <file_path/>
+        <instance_id>79a53370db8f73400ae3ac44d49619d1</instance_id>
+        <instance_name>dev90235</instance_name>
+        <name>sys_script_client_030336f92fdec010cc4824c62799b697</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;time_in&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;OnChange Time In&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+	var timeOutValue = g_form.getValue('time_out');
+
+	if (timeOutValue !== '') {
+		var timein = new Date(newValue); 
+		var timeOut = new Date(timeOutValue);
+
+		var date = DateTime.subtract(timein, timeOut); 
+		var timeSpent = new GlideDateTime(date).getTime().getByFormat('HH:mm:ss');
+
+		g_form.addErrorMessage("Time spent on premise " + timeSpent);
+	}
+	
+	
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-13 06:58:59&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;030336f92fdec010cc4824c62799b697&lt;/sys_id&gt;&lt;sys_mod_count&gt;20&lt;/sys_mod_count&gt;&lt;sys_name&gt;OnChange Time In&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Gate Access Control" source="x_441085_gate_acce"&gt;c635d4012f5e0010cc4824c62799b612&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Gate Access Control"&gt;c635d4012f5e0010cc4824c62799b612&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_030336f92fdec010cc4824c62799b697&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-13 09:09:08&lt;/sys_updated_on&gt;&lt;table&gt;x_441085_gate_acce_register&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1891001051</payload_hash>
+        <record_name>OnChange Time In</record_name>
+        <reverted_from/>
+        <source>ca35d4012f5e0010cc4824c62799b614</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-13 09:09:08</sys_created_on>
+        <sys_id>45925b392f520410cc4824c62799b613</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f9e29f75d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-13 09:09:08</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>cd925b39b2520410fea8ae6c67b1af12</update_guid>
+        <update_guid_history>cd925b39b2520410fea8ae6c67b1af12:-1891001051,6542dff569520410553ff2a6ce8d0b38:792475340,38811bf5ea5204102f5e4dfcb3c98ffe:1908828997,1ff057b1815204107189f5161d8201c2:-541593586,dfafcff126520410bb2fba5bdd2b694b:423701618,caddc3353f5204104cce7203c94c24f0:1464186054,f5fb47b146520410256f5e9b9ab99eb6:-308585034,a5bb4b311952041083af1288e157b9db:2038029571,8c6b8b3151520410637b216cdb33a14f:-194099153,7ea94b7d01120410a33693adff67c8ab:-719286600,d8094b7de2120410f86788f8f817eec3:357706755,26e5c73d6d120410cfa64b11a655b73f:-932171183,a50d7ab1fc120410ac1c6dbd3fb4bb1e:-1475703465,14f932310d120410c36447c3a2ca72e6:2001963990,e989ba71dc120410e8df0fd7558aae36:2121814574,52873afdd6dec010cb92f41cf3bce5f2:2039460135,6ec67ebd6adec010c5bc12d0309f15be:-1186709478,5076faf914dec01002c377271e643c46:-689969156,83657e7de6dec0102b7c457bcb786cae:-510951564,3f553e7da1dec010de70371c20b66f77:1236224551,26c4b6f9a8dec01087d8124bc7b08668:1487408925</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-13 09:10:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>1e3785f7415845eb9b72a458e556aef9</sys_id>
+        <sys_metadata>030336f92fdec010cc4824c62799b697</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OnChange Time In</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_parent display_value="Register">f3a51c492f5e0010cc4824c62799b69b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_scope_delete display_value="">06f0968c4c1a4e93839265ccc647b9a1</sys_scope_delete>
+        <sys_update_name>sys_script_client_030336f92fdec010cc4824c62799b697</sys_update_name>
+        <sys_update_version display_value="sys_script_client_030336f92fdec010cc4824c62799b697">45925b392f520410cc4824c62799b613</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-13 09:10:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

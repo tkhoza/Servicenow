@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_441085_gate_acce_register</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_441085_gate_acce_register">time_inISNOTEMPTY^time_outISNOTEMPTY^EQ<item endquery="false" field="time_in" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="time_out" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Set  Duration fields</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	var timein = new GlideDateTime("1970-01-01 00:00:00");
+	timein.setValue("1970-01-01 "+ current.time_in.toString());
+	
+	var timeOut = new GlideDateTime("1970-01-01 00:00:00");
+	timeOut.setValue("1970-01-01 "+ current.time_out.toString());
+	
+	var date = GlideDateTime.subtract(timein, timeOut); 
+	var timeSpent = new GlideDateTime(date).getTime().getByFormat('HH:mm:ss');
+	
+	current.duration_in_hours.setValue(timeSpent);
+	current.update();
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-20 08:31:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>335cc7482faec810cc4824c62799b632</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Set  Duration fields</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>sys_script_335cc7482faec810cc4824c62799b632</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-22 08:05:11</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=335cc7482faec810cc4824c62799b632"/>
+</record_update>

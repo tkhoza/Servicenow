@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+	c.isOpen = false;
+	
+	c.registerVisitor = function(){
+		c.server.update().then(function(response){
+			 c.data = {};
+			 c.isOpen = false;
+		})
+	}
+
+	c.callForm = function(state) {
+		c.isOpen = state === 'open' ? true : false;
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.bg-color {
+	background-color:#66d9ff !important;
+  padding:0.5px;
+}
+
+.float-right {
+	float:right !important;
+}
+
+
+.bold-border {
+	border: 1px solid #cccccc;
+  padding:4px;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description>add record to register table</description>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+
+}]]></link>
+        <name>Add To Register</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	if(!input)
+				return null;
+
+	var visitorsADDObj = new GlideRecord('x_441085_gate_acce_register'); 
+	visitorsADDObj.initialize();
+	
+	visitorsADDObj.last_name = input.lname;
+	visitorsADDObj.first_name = input.fname;
+	visitorsADDObj.gender = input.gender;
+	visitorsADDObj.passport_id_number = input.identity;
+	visitorsADDObj.cell_number = input.cellNo;
+	visitorsADDObj.reason_for_visit = input.reason;
+	
+	var date = new GlideDateTime();
+	date.addSeconds(7200);
+	time = date.getTime().getByFormat('HH:mm:ss');
+
+	visitorsADDObj.time_in = time;
+	visitorsADDObj.insert();
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-20 12:42:19</sys_created_on>
+        <sys_id>5086409c2f620c10cc4824c62799b6a6</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Add To Register</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>sp_widget_5086409c2f620c10cc4824c62799b6a6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-20 13:22:00</sys_updated_on>
+        <template><![CDATA[<br/>
+<button ng-if="!c.isOpen" class="btn btn-success float-right" ng-click="c.callForm('open')">Sign in Visitor</button>
+<button ng-if="c.isOpen" class="btn btn-default float-right"  ng-click="c.callForm('close')">Cancel</button>
+<div>
+  <form ng-if="c.isOpen" class="bold-border">
+    <h4 style="color:black;">
+      Enter Visitor's details
+    </h4>
+    <div class="row">
+      
+       <div class="col-md-8">
+        <div class="form-group">
+          <label for="lname">Last Name</label>
+          <input type="text" class="form-control" id="lname" ng-model="c.data.lname">
+        </div>
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input type="text" class="form-control" id="fname" ng-model="c.data.fname">
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <input type="text" class="form-control" id="gender" ng-model="c.data.gender">
+        </div>
+        <div class="form-group">
+          <label for="identity">identity</label>
+          <input type="text" class="form-control" id="identity" ng-model="c.data.identity">
+        </div>
+        <div class="form-group">
+          <label for="cellNo">Cell Number</label>
+          <input type="text" class="form-control" id="cellNo" ng-model="c.data.cellNo">
+        </div>
+        <div class="form-group">
+          <label for="reason">Reason For Visiting</label>
+          <textarea  type="text" class="form-control" id="reason" ng-model="c.data.reason"></textarea>
+        </div>
+      </div>
+      <div class="col-md-4">
+       <div class="form-group">
+          <label for="dateVisit">Date Of Visit</label>
+          <input type="date" onload="getDate()" class="form-control" readonly="true">
+        </div>
+        <div class="form-group">
+          <label for="timeIn">Time In</label>
+          <input type="time" class="form-control" id="timeIn" readonly="true">
+        </div>
+        <div class="form-group">
+          <label for="timeOut">Time Out</label>
+          <input type="time" class="form-control" id="timeOut" readonly="true">
+        </div>
+        <div class="form-group">
+          <div class="btn btn-primary" ng-click="c.registerVisitor()">Sign In</div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<br/>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</application>
+        <file_path/>
+        <instance_id>79a53370db8f73400ae3ac44d49619d1</instance_id>
+        <instance_name>dev90235</instance_name>
+        <name>sp_widget_5086409c2f620c10cc4824c62799b6a6</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+  /* widget controller */
+  var c = this;
+	c.isOpen = false;
+	
+	c.registerVisitor = function(){
+		c.server.update().then(function(response){
+			 c.data = {};
+			 c.isOpen = false;
+		})
+	}
+
+	c.callForm = function(state) {
+		c.isOpen = state === 'open' ? true : false;
+	}
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.bg-color {
+	background-color:#66d9ff !important;
+  padding:0.5px;
+}
+
+.float-right {
+	float:right !important;
+}
+
+
+.bold-border {
+	border: 1px solid #cccccc;
+  padding:4px;
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description&gt;add record to register table&lt;/description&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+
+}]]&gt;&lt;/link&gt;&lt;name&gt;Add To Register&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	if(!input)
+				return null;
+
+	var visitorsADDObj = new GlideRecord('x_441085_gate_acce_register'); 
+	visitorsADDObj.initialize();
+	
+	visitorsADDObj.last_name = input.lname;
+	visitorsADDObj.first_name = input.fname;
+	visitorsADDObj.gender = input.gender;
+	visitorsADDObj.passport_id_number = input.identity;
+	visitorsADDObj.cell_number = input.cellNo;
+	visitorsADDObj.reason_for_visit = input.reason;
+	
+	var date = new GlideDateTime();
+	date.addSeconds(7200);
+	time = date.getTime().getByFormat('HH:mm:ss');
+
+	visitorsADDObj.time_in = time;
+	visitorsADDObj.insert();
+	
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-20 12:42:19&lt;/sys_created_on&gt;&lt;sys_id&gt;5086409c2f620c10cc4824c62799b6a6&lt;/sys_id&gt;&lt;sys_mod_count&gt;19&lt;/sys_mod_count&gt;&lt;sys_name&gt;Add To Register&lt;/sys_name&gt;&lt;sys_package display_value="Gate Access Control" source="x_441085_gate_acce"&gt;c635d4012f5e0010cc4824c62799b612&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Gate Access Control"&gt;c635d4012f5e0010cc4824c62799b612&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_5086409c2f620c10cc4824c62799b6a6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-20 13:22:00&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;br/&gt;
+&lt;button ng-if="!c.isOpen" class="btn btn-success float-right" ng-click="c.callForm('open')"&gt;Sign in Visitor&lt;/button&gt;
+&lt;button ng-if="c.isOpen" class="btn btn-default float-right"  ng-click="c.callForm('close')"&gt;Cancel&lt;/button&gt;
+&lt;div&gt;
+  &lt;form ng-if="c.isOpen" class="bold-border"&gt;
+    &lt;h4 style="color:black;"&gt;
+      Enter Visitor's details
+    &lt;/h4&gt;
+    &lt;div class="row"&gt;
+      
+       &lt;div class="col-md-8"&gt;
+        &lt;div class="form-group"&gt;
+          &lt;label for="lname"&gt;Last Name&lt;/label&gt;
+          &lt;input type="text" class="form-control" id="lname" ng-model="c.data.lname"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+          &lt;label for="fname"&gt;First Name&lt;/label&gt;
+          &lt;input type="text" class="form-control" id="fname" ng-model="c.data.fname"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+          &lt;label for="gender"&gt;Gender&lt;/label&gt;
+          &lt;input type="text" class="form-control" id="gender" ng-model="c.data.gender"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+          &lt;label for="identity"&gt;identity&lt;/label&gt;
+          &lt;input type="text" class="form-control" id="identity" ng-model="c.data.identity"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+          &lt;label for="cellNo"&gt;Cell Number&lt;/label&gt;
+          &lt;input type="text" class="form-control" id="cellNo" ng-model="c.data.cellNo"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+          &lt;label for="reason"&gt;Reason For Visiting&lt;/label&gt;
+          &lt;textarea  type="text" class="form-control" id="reason" ng-model="c.data.reason"&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="col-md-4"&gt;
+       &lt;div class="form-group"&gt;
+          &lt;label for="dateVisit"&gt;Date Of Visit&lt;/label&gt;
+          &lt;input type="date" onload="getDate()" class="form-control" readonly="true"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+          &lt;label for="timeIn"&gt;Time In&lt;/label&gt;
+          &lt;input type="time" class="form-control" id="timeIn" readonly="true"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+          &lt;label for="timeOut"&gt;Time Out&lt;/label&gt;
+          &lt;input type="time" class="form-control" id="timeOut" readonly="true"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+          &lt;div class="btn btn-primary" ng-click="c.registerVisitor()"&gt;Sign In&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+&lt;/div&gt;
+&lt;br/&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>564707085</payload_hash>
+        <record_name>Add To Register</record_name>
+        <reverted_from/>
+        <source>ca35d4012f5e0010cc4824c62799b614</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-20 13:22:00</sys_created_on>
+        <sys_id>299fc0942fa20c10cc4824c62799b6c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fc31dfd110000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-20 13:22:00</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>a19fc094d9a20c1017f0fb7ec7bd65c5</update_guid>
+        <update_guid_history>a19fc094d9a20c1017f0fb7ec7bd65c5:564707085,c0cc4c9057a20c10464d32211a26ace6:-1074213459,5b9c0cd0f4a20c10bdf2af8d05ae5dbc:-759574809,61bb4c90d1a20c1082d4c274d1be42b2:957201654,449b889036a20c1086811f36b5a803fe:-187136839,b95bcc5093a20c1047152e1e19c3b300:892405208,a45b88907ca20c10a07860b27a2c4d30:199082488,672b04903ca20c10d49a32a311009cea:-1390474087,74da8850f1a20c106f8b7606d4319708:-972145448,c1ba00902ca20c10a232dc347365ce01:672690745,6a8a8c50dba20c1049001df39f7d4bf5:-2128038886,b22ac450b9a20c10bb7db660f2aa3ffb:-1645032190,b2d98c103ea20c10dccb516664acc045:1797911698,fac944108ea20c10095c4d92eb4d8d4b:-1008262363,5d5904dcaf620c10dd41617029788f2b:1359217966,1649ccdc3a620c10c58d9ad321752535:-93772597,26d84410e2a20c107c8aa9dab34efe44:1513422234,55988010bea20c10be00213269e3f4ee:158221270,20174c9ca8620c102ae16a2d9b763504:-378384049,5486409ced620c10c49e0c9bd516c4a7:1119221885</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Add To Register">419a1ce82f224c10cc4824c62799b692</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-21 08:48:30</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>40fe2412bfdf4e0eaba618dee15bcfe4</sys_id>
+        <sys_metadata>5086409c2f620c10cc4824c62799b6a6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Add To Register</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_scope_delete display_value="">06f0968c4c1a4e93839265ccc647b9a1</sys_scope_delete>
+        <sys_update_name>sp_widget_5086409c2f620c10cc4824c62799b6a6</sys_update_name>
+        <sys_update_version display_value="sp_widget_5086409c2f620c10cc4824c62799b6a6">299fc0942fa20c10cc4824c62799b6c5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-21 08:48:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

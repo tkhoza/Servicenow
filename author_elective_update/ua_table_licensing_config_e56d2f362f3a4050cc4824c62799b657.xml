@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="DELETE">
+        <is_fulfillment>false</is_fulfillment>
+        <license_condition/>
+        <license_model>none</license_model>
+        <license_roles/>
+        <name>x_441085_gate_acce_test</name>
+        <op_delete>true</op_delete>
+        <op_insert>true</op_insert>
+        <op_update>true</op_update>
+        <owner_condition/>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-10 10:11:38</sys_created_on>
+        <sys_id>e56d2f362f3a4050cc4824c62799b657</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_441085_gate_acce_test</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>ua_table_licensing_config_e56d2f362f3a4050cc4824c62799b657</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-10 10:11:38</sys_updated_on>
+    </ua_table_licensing_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</application>
+        <file_path/>
+        <instance_id>79a53370db8f73400ae3ac44d49619d1</instance_id>
+        <instance_name>dev90235</instance_name>
+        <name>ua_table_licensing_config_e56d2f362f3a4050cc4824c62799b657</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>x_441085_gate_acce_test</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-02-10 10:11:38</sys_created_on><sys_id>e56d2f362f3a4050cc4824c62799b657</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_441085_gate_acce_test</sys_name><sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package><sys_policy/><sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope><sys_update_name>ua_table_licensing_config_e56d2f362f3a4050cc4824c62799b657</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-02-10 10:11:38</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+        <payload_hash>-1845695396</payload_hash>
+        <record_name>x_441085_gate_acce_test</record_name>
+        <reverted_from/>
+        <source>ca35d4012f5e0010cc4824c62799b614</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-10 10:11:38</sys_created_on>
+        <sys_id>b56d2f362f3a4050cc4824c62799b659</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1702e9541b10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-10 10:11:38</sys_updated_on>
+        <type>Table Subscription Configuration</type>
+        <update_guid>ed6d2f36173a40502688337ee4066258</update_guid>
+        <update_guid_history>ed6d2f36173a40502688337ee4066258:-1845695396</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-10 10:12:43</sys_created_on>
+        <sys_db_object display_value="" name="ua_table_licensing_config">ua_table_licensing_config</sys_db_object>
+        <sys_id>05cc48691e84493080e970829f0fb910</sys_id>
+        <sys_metadata>e56d2f362f3a4050cc4824c62799b657</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_441085_gate_acce_test</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_scope_delete display_value="">06f0968c4c1a4e93839265ccc647b9a1</sys_scope_delete>
+        <sys_update_name>ua_table_licensing_config_e56d2f362f3a4050cc4824c62799b657</sys_update_name>
+        <sys_update_version display_value="ua_table_licensing_config_e56d2f362f3a4050cc4824c62799b657">b56d2f362f3a4050cc4824c62799b659</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-10 10:12:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

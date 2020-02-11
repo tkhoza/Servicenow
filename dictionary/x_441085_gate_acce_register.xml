@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Register" max_length="40" name="x_441085_gate_acce_register" type="collection">
+        <element label="Cell Number" max_length="40" name="cell_number" type="string"/>
+        <element default="javascript:gs.now()" dynamic_default_value="fb7553e85f220100a9ad2572f2b477b4" label="Date Of Visit" mandatory="true" max_length="255" name="date_of_visit" read_only="true" type="glide_date" use_dynamic_default="true"/>
+        <element default="00:00:00" label="Duration in Hours" max_length="40" name="duration_in_hours" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="First Name" mandatory="true" max_length="40" name="first_name" type="string"/>
+        <element choice="3" default="1" label="Gender" mandatory="true" max_length="255" name="gender" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Female" value="2"/>
+                <element inactive_on_update="false" label="Male" value="1"/>
+            </choice>
+        </element>
+        <element label="Last Name" mandatory="true" max_length="40" name="last_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Passport/Id Number" mandatory="true" max_length="40" name="passport_id_number" type="string"/>
+        <element label="Reason For Visit" max_length="1000" name="reason_for_visit" type="string"/>
+        <element label="Time  In" max_length="255" name="time_in" type="string"/>
+        <element label="Time Out" max_length="255" name="time_out" type="string"/>
+        <index name="index">
+            <element name="number"/>
+        </index>
+    </element>
+</database>

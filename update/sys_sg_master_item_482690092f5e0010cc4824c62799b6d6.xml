@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_item">
+    <sys_sg_master_item action="INSERT_OR_UPDATE">
+        <condition_order/>
+        <datasource_table>x_441085_gate_acce_register</datasource_table>
+        <datasource_table_condition/>
+        <embedded_screen display_value="Register Form Screen">442690092f5e0010cc4824c62799b6d4</embedded_screen>
+        <item_view display_value="Register List Screen Item View">0c2690092f5e0010cc4824c62799b6d2</item_view>
+        <name>Register master_item</name>
+        <sys_class_name>sys_sg_master_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-10 11:30:19</sys_created_on>
+        <sys_id>482690092f5e0010cc4824c62799b6d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Register master_item</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>sys_sg_master_item_482690092f5e0010cc4824c62799b6d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-10 11:30:19</sys_updated_on>
+    </sys_sg_master_item>
+</record_update>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message">
+    <sys_soap_message action="DELETE">
+        <access>package_private</access>
+        <authentication_type>basic</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile display_value="admin">59f0b43f53132300ee0dddeeff7b12a1</basic_auth_profile>
+        <basic_auth_user/>
+        <description/>
+        <download_wsdl>true</download_wsdl>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <name>gate_recreate_register_soap_api</name>
+        <protocol_profile/>
+        <sys_class_name>sys_soap_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-14 09:33:25</sys_created_on>
+        <sys_id>34d02c9e2fd24410cc4824c62799b60c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>gate_recreate_register_soap_api</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>sys_soap_message_34d02c9e2fd24410cc4824c62799b60c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-14 09:33:25</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <wsdl>https://dev90235.service-now.com/x_441085_gate_acce_gate_access_control_a.do?WSDL</wsdl>
+        <wsdl_xml/>
+    </sys_soap_message>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</application>
+        <file_path/>
+        <instance_id>79a53370db8f73400ae3ac44d49619d1</instance_id>
+        <instance_name>dev90235</instance_name>
+        <name>sys_soap_message_34d02c9e2fd24410cc4824c62799b60c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message"><sys_soap_message action="INSERT_OR_UPDATE"><access>package_private</access><authentication_type>basic</authentication_type><basic_auth_password/><basic_auth_profile display_value="admin">59f0b43f53132300ee0dddeeff7b12a1</basic_auth_profile><basic_auth_user/><description/><download_wsdl>true</download_wsdl><enable_mutual_auth>false</enable_mutual_auth><name>gate_recreate_register_soap_api</name><protocol_profile/><sys_class_name>sys_soap_message</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-14 09:33:25</sys_created_on><sys_id>34d02c9e2fd24410cc4824c62799b60c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>gate_recreate_register_soap_api</sys_name><sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package><sys_policy/><sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope><sys_update_name>sys_soap_message_34d02c9e2fd24410cc4824c62799b60c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-14 09:33:25</sys_updated_on><use_basic_auth>false</use_basic_auth><wsdl>https://dev90235.service-now.com/x_441085_gate_acce_gate_access_control_a.do?WSDL</wsdl><wsdl_xml/></sys_soap_message></record_update>]]></payload>
+        <payload_hash>529062064</payload_hash>
+        <record_name>gate_recreate_register_soap_api</record_name>
+        <reverted_from/>
+        <source>ca35d4012f5e0010cc4824c62799b614</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-14 09:33:25</sys_created_on>
+        <sys_id>f2b168de2fd24410cc4824c62799b602</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fa36690ea0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-14 09:33:25</sys_updated_on>
+        <type>SOAP Message</type>
+        <update_guid>bab168ded4d24410e6ba763d69a19901</update_guid>
+        <update_guid_history>bab168ded4d24410e6ba763d69a19901:529062064</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-14 09:36:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_soap_message">sys_soap_message</sys_db_object>
+        <sys_id>145f05d94f794ef08fcf33474f7ad061</sys_id>
+        <sys_metadata>34d02c9e2fd24410cc4824c62799b60c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>gate_recreate_register_soap_api</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_scope_delete display_value="">06f0968c4c1a4e93839265ccc647b9a1</sys_scope_delete>
+        <sys_update_name>sys_soap_message_34d02c9e2fd24410cc4824c62799b60c</sys_update_name>
+        <sys_update_version display_value="sys_soap_message_34d02c9e2fd24410cc4824c62799b60c">f2b168de2fd24410cc4824c62799b602</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-14 09:36:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

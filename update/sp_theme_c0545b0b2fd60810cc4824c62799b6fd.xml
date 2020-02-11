@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
+    <sp_theme action="INSERT_OR_UPDATE">
+        <css_variables>$sp-logo-margin-x: 		15px !default;&#13;
+$sp-tagline-color:		$text-color !default;&#13;
+$navbar-inverse-bg: 	#595959 !default;&#13;
+$navbar-inverse-link-color: #bdc0c4 !default;&#13;
+$navbar-inverse-link-hover-color: #abe4ed !default;&#13;
+$body-bg: 				#f0f3f4 !default;&#13;
+$dropdown-link-disabled-color: #ccc;&#13;
+</css_variables>
+        <footer/>
+        <footer_fixed>false</footer_fixed>
+        <header display_value="Stock Header">bf5ec2f2cb10120000f8d856634c9c0c</header>
+        <name>Gate Access Theme</name>
+        <navbar_fixed>true</navbar_fixed>
+        <sys_class_name>sp_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-17 06:29:06</sys_created_on>
+        <sys_id>c0545b0b2fd60810cc4824c62799b6fd</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Gate Access Theme</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>sp_theme_c0545b0b2fd60810cc4824c62799b6fd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-17 06:35:57</sys_updated_on>
+    </sp_theme>
+</record_update>

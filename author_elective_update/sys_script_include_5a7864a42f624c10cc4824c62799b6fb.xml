@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_441085_gate_acce.MyDateTimeAjax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>MyDateTimeAjax</name>
+        <script><![CDATA[var MyDateTimeAjax = Class.create();
+MyDateTimeAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	nowDateTime: function () 
+	{ 
+		gs.addInfoMessage(gs.nowDateTime());
+		return gs.nowDateTime(); 
+	},
+	
+    type: 'MyDateTimeAjax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-21 09:50:19</sys_created_on>
+        <sys_id>5a7864a42f624c10cc4824c62799b6fb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>MyDateTimeAjax</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>sys_script_include_5a7864a42f624c10cc4824c62799b6fb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-21 09:55:13</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</application>
+        <file_path/>
+        <instance_id>79a53370db8f73400ae3ac44d49619d1</instance_id>
+        <instance_name>dev90235</instance_name>
+        <name>sys_script_include_5a7864a42f624c10cc4824c62799b6fb</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_441085_gate_acce.MyDateTimeAjax&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;MyDateTimeAjax&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var MyDateTimeAjax = Class.create();
+MyDateTimeAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	nowDateTime: function () 
+	{ 
+		gs.addInfoMessage(gs.nowDateTime());
+		return gs.nowDateTime(); 
+	},
+	
+    type: 'MyDateTimeAjax'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-21 09:50:19&lt;/sys_created_on&gt;&lt;sys_id&gt;5a7864a42f624c10cc4824c62799b6fb&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;MyDateTimeAjax&lt;/sys_name&gt;&lt;sys_package display_value="Gate Access Control" source="x_441085_gate_acce"&gt;c635d4012f5e0010cc4824c62799b612&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Gate Access Control"&gt;c635d4012f5e0010cc4824c62799b612&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_5a7864a42f624c10cc4824c62799b6fb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-21 09:55:13&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2130299642</payload_hash>
+        <record_name>MyDateTimeAjax</record_name>
+        <reverted_from/>
+        <source>ca35d4012f5e0010cc4824c62799b614</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-21 09:55:13</sys_created_on>
+        <sys_id>d2d924682f624c10cc4824c62799b6e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fc7870b5c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-21 09:55:13</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>5ed9246815624c10c50fb2d3abc5d6e5</update_guid>
+        <update_guid_history>5ed9246815624c10c50fb2d3abc5d6e5:-2130299642,eab8ac60e4624c1055415f312d02a426:1920681082</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-22 06:54:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>2fd01e6cccbf49588c65a40ee3df6d90</sys_id>
+        <sys_metadata>5a7864a42f624c10cc4824c62799b6fb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MyDateTimeAjax</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_scope_delete display_value="">06f0968c4c1a4e93839265ccc647b9a1</sys_scope_delete>
+        <sys_update_name>sys_script_include_5a7864a42f624c10cc4824c62799b6fb</sys_update_name>
+        <sys_update_version display_value="sys_script_include_5a7864a42f624c10cc4824c62799b6fb">d2d924682f624c10cc4824c62799b6e6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-22 06:54:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

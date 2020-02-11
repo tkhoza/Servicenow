@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Security Details" section_id="697c90412f9e0010cc4824c62799b610" sys_domain="global" table="x_441085_gate_acce_register" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-10 12:07:11</sys_created_on>
+            <sys_id>849ed0c12f9e0010cc4824c62799b694</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Security Details" display_value="Security Details" name="x_441085_gate_acce_register" sys_domain="global" view="Default view">697c90412f9e0010cc4824c62799b610</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-10 12:07:11</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Security Details</caption>
+            <header>false</header>
+            <name>x_441085_gate_acce_register</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-10 11:58:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>697c90412f9e0010cc4824c62799b610</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Security Details</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+            <sys_update_name>sys_ui_section_697c90412f9e0010cc4824c62799b610</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-10 12:00:28</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</application>
+        <file_path/>
+        <instance_id>79a53370db8f73400ae3ac44d49619d1</instance_id>
+        <instance_name>dev90235</instance_name>
+        <name>sys_ui_section_697c90412f9e0010cc4824c62799b610</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Security Details" section_id="697c90412f9e0010cc4824c62799b610" sys_domain="global" table="x_441085_gate_acce_register" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-10 12:07:11</sys_created_on><sys_id>849ed0c12f9e0010cc4824c62799b694</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Security Details" display_value="Security Details" name="x_441085_gate_acce_register" sys_domain="global" view="Default view">697c90412f9e0010cc4824c62799b610</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-10 12:07:11</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Security Details</caption><header>false</header><name>x_441085_gate_acce_register</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-10 11:58:00</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>697c90412f9e0010cc4824c62799b610</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Security Details</sys_name><sys_overrides/><sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package><sys_policy/><sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope><sys_update_name>sys_ui_section_697c90412f9e0010cc4824c62799b610</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-10 12:00:28</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>1763364531</payload_hash>
+        <record_name>Register</record_name>
+        <reverted_from/>
+        <source>ca35d4012f5e0010cc4824c62799b614</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-10 12:07:11</sys_created_on>
+        <sys_id>c89ed0c12f9e0010cc4824c62799b695</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f8f59e7c70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-10 12:07:11</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>449ed0c11e9e0010444b26b330a96195</update_guid>
+        <update_guid_history>449ed0c11e9e0010444b26b330a96195:1763364531,b10dd8414f9e00100403085727edf798:-1591380971,85fc9841439e001092754ac243254d60:545899747,0dfc5841f39e0010b7c5a0a7d55c46df:-1123975301,b57c90412b9e0010a4c92b07093077dd:-1486836561</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-10 12:07:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>13d8fe154df447b69a4929008dc3ef79</sys_id>
+        <sys_metadata>697c90412f9e0010cc4824c62799b610</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Security Details</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_parent display_value="Register">f3a51c492f5e0010cc4824c62799b69b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_scope_delete display_value="">06f0968c4c1a4e93839265ccc647b9a1</sys_scope_delete>
+        <sys_update_name>sys_ui_section_697c90412f9e0010cc4824c62799b610</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_697c90412f9e0010cc4824c62799b610">c89ed0c12f9e0010cc4824c62799b695</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-10 12:07:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

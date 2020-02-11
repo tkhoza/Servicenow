@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_441085_gate_acce.test_user" name="x_441085_gate_acce.test_user">9d6de7fe2ff64050cc4824c62799b673</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-10 10:11:37</sys_created_on>
+        <sys_id>dd6de7fe2ff64050cc4824c62799b676</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>9d6de7fe2ff64050cc4824c62799b673</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>sys_embedded_help_role_dd6de7fe2ff64050cc4824c62799b676</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-10 10:11:37</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

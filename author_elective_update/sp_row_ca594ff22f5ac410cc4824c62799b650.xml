@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row">
+    <sp_row action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <sp_column/>
+        <sp_container display_value="Gate Home Page - Container 1">b8594bf22f5ac410cc4824c62799b645</sp_container>
+        <sys_class_name>sp_row</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-16 11:02:41</sys_created_on>
+        <sys_id>ca594ff22f5ac410cc4824c62799b650</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>sp_row_ca594ff22f5ac410cc4824c62799b650</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-16 11:02:41</sys_updated_on>
+    </sp_row>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</application>
+        <file_path/>
+        <instance_id>79a53370db8f73400ae3ac44d49619d1</instance_id>
+        <instance_name>dev90235</instance_name>
+        <name>sp_row_ca594ff22f5ac410cc4824c62799b650</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column/><sp_container display_value="Gate Home Page - Container 1">b8594bf22f5ac410cc4824c62799b645</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-16 11:02:41</sys_created_on><sys_id>ca594ff22f5ac410cc4824c62799b650</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package><sys_policy/><sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope><sys_update_name>sp_row_ca594ff22f5ac410cc4824c62799b650</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-16 11:02:41</sys_updated_on></sp_row></record_update>]]></payload>
+        <payload_hash>509102299</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>ca35d4012f5e0010cc4824c62799b614</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-16 11:02:41</sys_created_on>
+        <sys_id>86594ff22f5ac410cc4824c62799b652</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fae05042d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-16 11:02:41</sys_updated_on>
+        <type>Row</type>
+        <update_guid>ce594ff2e05ac410b25f251a88b2d351</update_guid>
+        <update_guid_history>ce594ff2e05ac410b25f251a88b2d351:509102299</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="1">3b82d3c72fd60810cc4824c62799b6e0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-17 06:21:26</sys_created_on>
+        <sys_db_object display_value="" name="sp_row">sp_row</sys_db_object>
+        <sys_id>500694ac4cc94f08ae799539b2059519</sys_id>
+        <sys_metadata>ca594ff22f5ac410cc4824c62799b650</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_scope_delete display_value="">06f0968c4c1a4e93839265ccc647b9a1</sys_scope_delete>
+        <sys_update_name>sp_row_ca594ff22f5ac410cc4824c62799b650</sys_update_name>
+        <sys_update_version display_value="sp_row_ca594ff22f5ac410cc4824c62799b650">86594ff22f5ac410cc4824c62799b652</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-17 06:21:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="add_to_register_api" max_length="40" name="x_441085_gate_acce_add_to_register_api" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_cell_number" label="Cell number" max_length="40" name="u_cell_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_duration_in_hours" label="Duration in hours" max_length="40" name="u_duration_in_hours" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_first_name" label="First name" max_length="40" name="u_first_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_gender" label="Gender" max_length="40" name="u_gender" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_last_name" label="Last name" max_length="40" name="u_last_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_number" label="Number" max_length="40" name="u_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_passport_id_number" label="Passport ID number" max_length="40" name="u_passport_id_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_reason_for_visit" label="Reason for visit" max_length="40" name="u_reason_for_visit" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_time_in" label="Time in" max_length="40" name="u_time_in" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_time_out" label="Time out" max_length="40" name="u_time_out" type="string"/>
+    </element>
+</database>

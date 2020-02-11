@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency">
+    <m2m_sp_widget_dependency action="DELETE">
+        <sp_dependency display_value="">cd2f420d2fa2cc10cc4824c62799b65e</sp_dependency>
+        <sp_widget display_value="Register list widget">094eaf032f5a0810cc4824c62799b6c1</sp_widget>
+        <sys_class_name>m2m_sp_widget_dependency</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-23 06:35:27</sys_created_on>
+        <sys_id>274fc24d2fa2cc10cc4824c62799b6ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.Register list widget</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>m2m_sp_widget_dependency_274fc24d2fa2cc10cc4824c62799b6ff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-23 06:35:27</sys_updated_on>
+    </m2m_sp_widget_dependency>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</application>
+        <file_path/>
+        <instance_id>79a53370db8f73400ae3ac44d49619d1</instance_id>
+        <instance_name>dev90235</instance_name>
+        <name>m2m_sp_widget_dependency_274fc24d2fa2cc10cc4824c62799b6ff</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="">cd2f420d2fa2cc10cc4824c62799b65e</sp_dependency><sp_widget display_value="Register list widget">094eaf032f5a0810cc4824c62799b6c1</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-23 06:35:27</sys_created_on><sys_id>274fc24d2fa2cc10cc4824c62799b6ff</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.Register list widget</sys_name><sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package><sys_policy/><sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope><sys_update_name>m2m_sp_widget_dependency_274fc24d2fa2cc10cc4824c62799b6ff</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-23 06:35:27</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+        <payload_hash>-2061788305</payload_hash>
+        <record_name>.Register list widget</record_name>
+        <reverted_from/>
+        <source>ca35d4012f5e0010cc4824c62799b614</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-23 06:35:27</sys_created_on>
+        <sys_id>2b4f064d2fa2cc10cc4824c62799b601</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fd11cdc930000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-23 06:35:27</sys_updated_on>
+        <type>Widget Dependency</type>
+        <update_guid>634f064d41a2cc10a3307647b1149201</update_guid>
+        <update_guid_history>634f064d41a2cc10a3307647b1149201:-2061788305</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value=".Register list widget">f06fc64d2fa2cc10cc4824c62799b696</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-23 06:35:49</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_widget_dependency">m2m_sp_widget_dependency</sys_db_object>
+        <sys_id>75897871286f49fa9d84cd840514aa71</sys_id>
+        <sys_metadata>274fc24d2fa2cc10cc4824c62799b6ff</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.Register list widget</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_scope_delete display_value="">06f0968c4c1a4e93839265ccc647b9a1</sys_scope_delete>
+        <sys_update_name>m2m_sp_widget_dependency_274fc24d2fa2cc10cc4824c62799b6ff</sys_update_name>
+        <sys_update_version display_value="m2m_sp_widget_dependency_274fc24d2fa2cc10cc4824c62799b6ff">2b4f064d2fa2cc10cc4824c62799b601</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-23 06:35:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

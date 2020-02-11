@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Reason For Visit" section_id="c9fc58412f9e0010cc4824c62799b6dd" sys_domain="global" table="x_441085_gate_acce_register" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reason_for_visit</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-10 12:00:09</sys_created_on>
+            <sys_id>05fc98412f9e0010cc4824c62799b658</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Reason For Visit" display_value="Reason For Visit" name="x_441085_gate_acce_register" sys_domain="global" view="Default view">c9fc58412f9e0010cc4824c62799b6dd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-10 12:00:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Reason For Visit</caption>
+            <header>false</header>
+            <name>x_441085_gate_acce_register</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-10 12:00:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c9fc58412f9e0010cc4824c62799b6dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Reason For Visit</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+            <sys_update_name>sys_ui_section_c9fc58412f9e0010cc4824c62799b6dd</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-10 12:00:09</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</application>
+        <file_path/>
+        <instance_id>79a53370db8f73400ae3ac44d49619d1</instance_id>
+        <instance_name>dev90235</instance_name>
+        <name>sys_ui_section_c9fc58412f9e0010cc4824c62799b6dd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Reason For Visit" section_id="c9fc58412f9e0010cc4824c62799b6dd" sys_domain="global" table="x_441085_gate_acce_register" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>reason_for_visit</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-10 12:00:09</sys_created_on><sys_id>05fc98412f9e0010cc4824c62799b658</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Reason For Visit" display_value="Reason For Visit" name="x_441085_gate_acce_register" sys_domain="global" view="Default view">c9fc58412f9e0010cc4824c62799b6dd</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-10 12:00:09</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Reason For Visit</caption><header>false</header><name>x_441085_gate_acce_register</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-10 12:00:09</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c9fc58412f9e0010cc4824c62799b6dd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Reason For Visit</sys_name><sys_overrides/><sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package><sys_policy/><sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope><sys_update_name>sys_ui_section_c9fc58412f9e0010cc4824c62799b6dd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-10 12:00:09</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-56547505</payload_hash>
+        <record_name>Register</record_name>
+        <reverted_from/>
+        <source>ca35d4012f5e0010cc4824c62799b614</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-10 12:00:09</sys_created_on>
+        <sys_id>49fc98412f9e0010cc4824c62799b659</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f8f5377290000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-10 12:00:09</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>c1fc9841829e00107e19b92d6ec08159</update_guid>
+        <update_guid_history>c1fc9841829e00107e19b92d6ec08159:-56547505</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-10 12:04:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>136be8a59a584a3a817abba016d5f3c1</sys_id>
+        <sys_metadata>c9fc58412f9e0010cc4824c62799b6dd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reason For Visit</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_parent display_value="Register">f3a51c492f5e0010cc4824c62799b69b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_scope_delete display_value="">06f0968c4c1a4e93839265ccc647b9a1</sys_scope_delete>
+        <sys_update_name>sys_ui_section_c9fc58412f9e0010cc4824c62799b6dd</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_c9fc58412f9e0010cc4824c62799b6dd">49fc98412f9e0010cc4824c62799b659</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-10 12:04:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

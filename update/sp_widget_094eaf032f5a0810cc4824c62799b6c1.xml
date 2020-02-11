@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope,spUtil,$http) {
+   /* widget controller */
+	/*$scope.server..update().then(function(response){
+			 $scope.data = {};
+			 $scope.isOpen = false;
+		})*/
+	
+  var c = this;
+	
+	$scope.isOpen = false;
+	$scope.isUpdate = false;
+	$scope.CanUpdated = false;
+	$scope.filterValue = null;
+
+	$scope.signInVisitor = function(data){
+		var now = moment().subtract(43200, 'seconds');
+		data.time_in = now.format("HH:mm:ss");
+		
+		$http({
+			method:'POST',
+			url:'/api/now/table/x_441085_gate_acce_register',
+			headers: {'Content-Type':'application/json'},
+			data:data
+		}).then(function(response){
+			 if(response.status == 201 || response.status == 200)
+			 {
+				 $scope.isOpen = false;
+				 $scope.data = {};
+					toastr.success('Visitor details has been successfully captured','Welcome!!!');
+			 }
+			 else
+			 {
+					toastr.error('System failed to captured details','System Error');
+			 }
+			
+		})
+	}
+	
+
+	$scope.setDateTime = function () { 
+		$('#datetimepicker1').on('dp.change', function(data){ 
+			var strDateTime = data.date._d.toString();
+			var pickedDate = new Date(strDateTime);
+			var tempDate = pickedDate.toLocaleString().split(',')[0].toString();
+			var date = (new Date(tempDate)).toLocaleDateString().split('/');
+			var setDate = date[1].toString().padStart(2, 0) +"-"+ date[0].toString().padStart(2, 0) +"-" + date[2];
+			
+			$scope.filterValue = setDate;
+		})
+	}
+	
+	spUtil.recordWatch($scope,"x_441085_gate_acce_register","date_of_visit=" + $scope.filterValue,function(name,data){
+		spUtil.update($scope).then(function(data){
+			console.log(data);
+		})
+	});
+	
+	$scope.updateVisitor = function(data){
+		$http({
+			method:'PUT',
+			url:'/api/now/table/x_441085_gate_acce_register/' + data.sys_id ,
+			headers: {'Content-Type':'application/json'},
+			data:data
+		}).then(function(response){
+			 if(response.status == 201 || response.status == 200)
+			 {
+				 $scope.isOpen = false;
+				 $scope.isUpdate = false;
+				 $scope.data = {};
+				 toastr.success('Visitor details has been successfully updated','Details Updated');
+			 }
+			 else
+			 {
+					toastr.error('System failed to captured details','System Error');
+			 }
+		})
+	}
+	
+	$scope.datetimeFilter = function(){
+			$('#datetimepicker1').datetimepicker({
+				 useCurrent: true,
+				 format: 'DD-MM-YYYY'
+			});
+	}
+	
+	$scope.datetimeFilter();
+	
+	$scope.deleteVisitor = function(data){
+		$http({
+			method:'DELETE',
+			url:'/api/now/table/x_441085_gate_acce_register/' + data.sys_id ,
+			headers: {'Content-Type':'application/json'},
+			data:{}
+		}).then(function(response){
+			 if(response.status == 204 || response.status == 200)
+			 {
+				 $scope.isOpen = false;
+				 $scope.isUpdate = false;
+				 $scope.data = {};
+				 toastr.success('<Strong>' + data.first_name + '</Strong>' + ' details has been removed' ,'Removed');
+			 }
+			else
+			{
+				toastr.error('System failed to captured details','System Error');
+			}
+			
+		})
+	}
+	
+	$scope.signOutVisitor = function(data){
+			var now = moment().subtract(43200, 'seconds');
+			var timeOut = now.format('HH:mm:ss');
+			data.time_out = timeOut;
+		
+			$http({
+					method:'PUT',
+					url:'/api/now/table/x_441085_gate_acce_register/' + data.sys_id ,
+					headers: {'Content-Type':'application/json'},
+					data:data
+				}).then(function(response){
+				 if(response.status == 201 || response.status == 200)
+				 {
+					 $scope.isOpen = false;
+					 $scope.data = {};
+					 toastr.success('Good Bye ' + '<Strong>' + data.first_name + '</Strong>' ,'Sign Out');
+				 }
+				 else
+				 {
+						toastr.error('System failed to captured details','System Error');
+				 }
+				})
+	}
+
+	$scope.editForm = function(data) {
+		$scope.data = data;
+		$scope.isOpen = true;
+		$scope.isUpdate = true;
+		$scope.CanUpdated = false;
+		
+		if(data.time_out == null)
+		{
+			$scope.CanUpdated = true;
+		}
+	}
+
+	$scope.callForm = function(state) {
+		$scope.isOpen = state === 'open' ? true : false;
+		$scope.isUpdate = false;
+		$scope.CanUpdated = true;
+		
+		if(state === 'close')
+		{
+			 $scope.isOpen = false;
+			 $scope.data = {};
+			 spUtil.update($scope);
+		}
+		else
+		{
+			var date = new moment.utc().format('YYYY-MM-DD');
+			$scope.data.date_of_visit = date;
+			$scope.data.gender = "1";
+		}
+	}
+	
+	$scope.requiredInputsGroup = function () {
+		var isRequired = true;
+		
+		angular.forEach(["last_name", "first_name", "gender", "passport_id_number", "cell_number", "reason_for_visit"], function (input) {
+			if ($scope.data[input]) {
+				if(!isRequired)
+				{
+							isRequired = false;
+				}
+			}
+		});
+
+		return isRequired;
+	};
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.bg-color {
+	background-color:#66d9ff !important;
+  padding:0.5px;
+}
+
+.float-right {
+	float:right !important;
+}
+
+
+.bold-border {
+	border: 1px solid #cccccc;
+  padding:4px;
+}
+
+
+.searchText {
+  	border-radius: 4px;
+   border: 1px solid #cccccc;
+    width: 50%;
+    padding: 0.5em;
+}
+.selectItem {
+  	border-radius: 4px;
+   border: 1px solid #cccccc;
+    width: 100%;
+    padding: 0.5em;
+}
+
+.input-group {
+   width: 50%;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description>This will show all the register rwecords</description>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>register-list_widget</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+
+}]]></link>
+        <name>Register list widget</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+	
+	data.vistors = [];
+	count = 1;
+	var date = new GlideDateTime();
+	
+	var visitorsObj = new GlideRecord('x_441085_gate_acce_register');
+	//visitorsObj.addQuery('date_of_visit',date.getDate().getByFormat('YYYY-MM-dd'))
+	visitorsObj.query(); 
+	
+	while (visitorsObj.next()) {
+		data.vistors.push({
+			number : count.toString(),
+			sys_id : visitorsObj.sys_id.toString(),
+			last_name: visitorsObj.last_name.toString(),
+			first_name: visitorsObj.first_name.toString(),
+			gender: visitorsObj.gender.toString(),
+			passport_id_number: visitorsObj.passport_id_number.toString(),
+			cell_number: visitorsObj.cell_number.toString(),
+			reason_for_visit: visitorsObj.reason_for_visit.toString(),
+			date_of_visit: visitorsObj.date_of_visit.toString(),
+			time_in: visitorsObj.time_in != '' ?  visitorsObj.time_in.toString(): null,
+			time_out:  visitorsObj.time_out != ''? visitorsObj.time_out.toString(): null,
+			duration_in_hours: visitorsObj.duration_in_hours.toString()
+		});
+		
+		count++;
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-17 08:23:44</sys_created_on>
+        <sys_id>094eaf032f5a0810cc4824c62799b6c1</sys_id>
+        <sys_mod_count>698</sys_mod_count>
+        <sys_name>Register list widget</sys_name>
+        <sys_package display_value="Gate Access Control" source="x_441085_gate_acce">c635d4012f5e0010cc4824c62799b612</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gate Access Control">c635d4012f5e0010cc4824c62799b612</sys_scope>
+        <sys_update_name>sp_widget_094eaf032f5a0810cc4824c62799b6c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-23 14:04:54</sys_updated_on>
+        <template><![CDATA[<br/>
+<nav ng-if="data.vistors" aria-label="breadcrumb">
+  <div class="text-center bg-color">
+    <h2>All vistor(s) are listed here...</h2>
+  </div>
+</nav>
+
+<br/>
+<button ng-if="!isOpen" class="btn btn-success float-right" ng-click="callForm('open')">Sign in Visitor</button>
+<button ng-if="isOpen" class="btn btn-default float-right"  ng-click="callForm('close')">Cancel</button>
+<div>
+  <form ng-if="isOpen" class="bold-border" name="myForm" action="#sent" method="post" ng-disabled="myForm.$invalid" ng-app>
+    <h4 style="color:black;">
+      Enter Visitor's details
+    </h4>
+    <div class="row">
+       <div class="col-md-8">
+        <div class="form-group">
+          <label for="lname">Last Name</label>
+          <input type="text" required="true" class="form-control" id="lname" ng-required="requiredInputsGroup()" ng-readonly="!CanUpdated" ng-model="data.last_name">
+        </div>
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input type="text" class="form-control" id="fname" ng-required="requiredInputsGroup()" ng-readonly="!CanUpdated" ng-model="data.first_name">
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+         	<select ng-model="data.gender" class="selectItem" ng-disabled="!CanUpdated" >
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="identity">identity</label>
+          <input type="text" class="form-control" id="identity" ng-required="requiredInputsGroup()" ng-readonly="!CanUpdated" ng-model="data.passport_id_number">
+        </div>
+        <div class="form-group">
+          <label for="cellNo">Cell Number</label>
+          <input type="text" class="form-control" id="cellNo" ng-required="requiredInputsGroup()" ng-readonly="!CanUpdated" ng-model="data.cell_number">
+        </div>
+        <div class="form-group">
+          <label for="reason">Reason For Visiting</label>
+          <textarea  type="text" class="form-control" id="reason" ng-required="requiredInputsGroup()" ng-readonly="!CanUpdated" ng-model="data.reason_for_visit"></textarea>
+        </div>
+      </div>
+      <div class="col-md-4">
+       <div class="form-group">
+          <label for="dateVisit">Date Of Visit</label>
+          <input type="text"  class="form-control" readonly="true" ng-model="data.date_of_visit">
+        </div>
+        <div class="form-group">
+          <label for="time_in">Time In</label>
+          <input type="text" class="form-control" id="timeIn" readonly="true" ng-model="data.time_in">
+        </div>
+        <div class="form-group">
+          <label for="timeout">Time Out</label>
+          <input type="text" class="form-control" id="timeOut" readonly="true" ng-model="data.time_out">
+        </div>
+        <div class="form-group">
+          <div ng-if="!isUpdate" ng-disabled="myForm.$invalid" class="btn btn-primary" ng-click="signInVisitor(data)">Sign In</div>
+          <div ng-if="isUpdate && CanUpdated" class="btn btn-primary" ng-click="signOutVisitor(data)">Sign Out</div>
+          <div ng-if="isUpdate && CanUpdated" class="btn btn-warning" ng-click="updateVisitor(data)">Update</div>
+          <div ng-if="isUpdate && CanUpdated" class="btn btn-danger" ng-click="deleteVisitor(data)">Remove</div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<br/>
+
+<div ng-if="!isOpen" >
+  <div class="row" style="margin:0px;" ng-init='datetimeFilter()'>
+     <div class="col-md-8">
+       <div class='input-group date' id='datetimepicker1'>
+         <input type='text' id="dateChange" class="form-control" placeholder="Filter By Date"/>
+         <span class="input-group-addon" ng-click="setDateTime()">
+           <span class="glyphicon glyphicon-calendar"></span>
+         </span>
+      </div>
+       <br>
+       <input type="text" class="searchText" placeholder="Search a visitor" ng-model="searchText">
+    </div>
+  </div>
+
+  <!-- your widget template -->
+  <div ng-if="data.vistors">
+   <table class="table">
+        <thead>
+          <tr>
+            <th >#</th>
+            <th >Last Name</th>
+            <th >First Name</th>
+            <th >Visit Date</th>
+            <th >Time In</th>
+            <th >Time Out</th>
+            <th >Time Spent</th>
+          </tr>
+        </thead>
+        <tbody ng-repeat="visitor in data.vistors | filter:searchText" >
+           <tr ng-click="editForm(visitor)">
+            <th>{{visitor.number}}</th>
+            <td>{{visitor.last_name}}</td>
+            <td>{{visitor.first_name}}</td>
+            <td>{{visitor.date_of_visit}}</td>
+            <td>{{visitor.time_in}}</td>
+            <td>{{visitor.time_out}}</td>
+            <td>{{visitor.duration_in_hours}}</td>
+          </tr>
+        </tbody>
+   </table>
+  </div>
+  
+  <div ng-if="!data.vistors">
+  	<p style="text-align:center;width:100%">
+      ${No visitor(s) has been captured into the system}
+    </p>
+  </div>
+</div>
+<div ng-if="data.vistors" aria-label="breadcrumb">
+  <div class="text-center bg-color">
+    <h2>${oooo}</h2>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
